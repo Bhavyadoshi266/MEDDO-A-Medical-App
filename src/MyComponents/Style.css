@@ -5,88 +5,44 @@
     list-style: none;
     text-decoration: none;
     outline: none;
-    font-family: 'Gabarito',sans-serif;
+    font-family: 'Gabarito', sans-serif;
 }
 
-.wrapper{
+.wrapper {
     max-width: 1290px;
     width: 100%;
     margin: 0 auto;
 }
 
-.navbar{
+.navbar_sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+    z-index: 1;
+}
+
+.navbar {
     background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius:20px;
+    border-radius: 20px;
     margin: 0 0 15px 0;
 }
 
-.nav-item{
+.nav-item {
     padding: 15px 15px 14px;
 }
 
-.nav-link{
+.nav-link {
     color: #222222;
     text-decoration: none;
     font-size: 15px;
     padding: 0;
 }
 
-.Corosel_on{
-    display: flex;
-    align-items: center;
-}
-
-.Corosel_one_left{
-    padding: 90px 80px;
-    background-color: #3a6cee;
-    color: #ffffff;
-    border-radius: 20px 0 0 20px;
-    width: 55%;
-}
-
-.Corosel_one_left_text{
-    font-size: 16px;
-    line-height: 1.8;
-}
-
-.Corosel_one_left_header{
-    font-size: 78px;
-    line-height: 1.2;
-}
-
-.Corosel_one_right{
-    width: 45%;
-}
-.Corosel_one_right img{
-    object-fit: cover;
-    width: 100%;
-    border-radius: 0 20px 20px 0;
-}
-
-.btn_appointment{
-    background-color: #ffffff;
-    border: none;
-    padding: 14px 50px;
-    border-radius: 12px;
-    margin-top: 40px;
-}
-
-.btn_appointment:hover{
-    background-color: #3a6cee;
-    border:2px solid #fff;
-    color: #ffffff;
-}
-
-.nav-link:hover{
-    color:#3a6cee;
-}
-
-.homepage{
-    background-color: #f9f9f9;
-    padding: 15px 0;
+.nav-link:hover {
+    color: #3a6cee;
 }
 
 .dropdown {
@@ -108,7 +64,7 @@
     position: absolute;
     background-color: #ffffff;
     min-width: 180px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 10px;
 }
@@ -123,7 +79,7 @@
 .dropdown-content a:hover {
     /* background-color: #3a6cee; */
     color: #3a6cee;
-    border-left: 2px solid #3a6cee;
+    border-left: 1px solid #3a6cee;
 }
 
 .dropdown:hover .dropdown-content {
@@ -132,4 +88,262 @@
 
 .dropdown:hover button {
     color: #3a6cee;
+}
+
+.nav_contacts {
+    color: #3a6cee;
+    text-decoration: none;
+}
+
+.nav_contacts:hover {
+    color: #222222;
+}
+
+/* HOMEPAGE */
+.homepage {
+    background-color: #f9f9f9;
+    padding: 15px 0;
+}
+
+/* COROSEL_ONE */
+
+.Corosel_on {
+    display: flex;
+    align-items: center;
+    background-color: #3a6cee;
+    border-radius: 20px;
+}
+
+.Corosel_one_left {
+    padding: 90px 80px;
+    color: #ffffff;
+    /* width: 55%; */
+}
+
+.Corosel_one_left_text {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.Corosel_one_left_header {
+    font-size: 78px;
+    line-height: 1.2;
+}
+
+.Corosel_one_right img {
+    object-fit: cover;
+    width: 100%;
+    height: 700px;
+    border-radius: 0 20px 20px 0;
+}
+
+.btn_appointment {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    margin-top: 40px;
+    margin-right: 36px;
+}
+
+.btn_appointment:hover {
+    background-color: #3a6cee;
+    border: 1px solid #fff;
+    color: #ffffff;
+}
+
+@keyframes flowUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animate-text {
+    animation: flowUp 1s ease-in-out forwards;
+}
+
+.animate-image {
+    animation: slideIn 1s ease-in-out forwards;
+}
+
+
+@media(max-width : 1000px) {
+    .Corosel_one_right img {
+        border-radius: 0;
+    }
+
+    .Corosel_one_left {
+        border-radius: 0;
+        /* padding: 0;
+        margin: 0; */
+    }
+}
+
+/* Speciality */
+
+.speciality_readmore {
+    color: #3a6cee;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.speciality_readmore:hover {
+    color: #222222;
+}
+
+.speciality_text {
+    color: #646464;
+    font-size: 16px;
+}
+
+.speciality_title {
+    color: #222222;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.speciality_title:hover {
+    color: #3a6cee;
+}
+
+.speciality_body {
+    border: none;
+    border-radius: 20px;
+}
+
+.speciality_header {
+    font-size: 16px;
+    color: #3a6cee;
+}
+
+.speciality_headertext {
+    font-size: 48px;
+    color: #222222;
+    font-weight: 500;
+}
+
+.speciality_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+@keyframes flowUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.flow-up {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.flow-up>.row {
+    animation: flowUp 1s ease-in-out forwards;
+}
+
+/* Corosel_two_aboutus */
+
+.Corosel_two_aboutus {
+    padding: 80px 80px;
+    background-color: #3a6cee;
+
+}
+
+.Corosel_to_aboutus {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 80px;
+}
+
+.btn_aboutus {
+    border: 1px solid #ffffff;
+    background-color: #3a6cee;
+    border-radius: 12px;
+    color: #ffffff;
+}
+
+.btn_aboutus:hover {
+    background-color: #ffffff;
+    color: #222222;
+}
+
+.Corosel_to_aboutus_left {
+    /* max-width: 47%; */
+    /* width:47%; */
+    object-fit: cover;
+}
+
+.Corosel_to_aboutus_right {
+    display: inline;
+    column-gap: 10px;
+}
+
+.Corosel_to_aboutus_left img {
+    border-radius: 20px;
+    height: 630px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.Corosel_to_aboutus_header {
+    color: #ffffff;
+    font-size: 48px;
+}
+
+.Corosel_to_aboutus_text {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 2;
+    padding-right: 100px;
+    display: grid;
+    gap: 10px;
+}
+
+.count_name {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.Corosel_to_aboutus_animateimage {
+    animation: slideIn 1s ease-in-out forwards;
 }
