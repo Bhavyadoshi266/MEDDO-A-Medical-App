@@ -17,15 +17,38 @@ export default function Navbar() {
                             </button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                    <li class="nav-item">
-                                        <a class="nav-link p-0 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Dropdown
+                                    <li class="nav-item d-flex">
+
+                                        <div class="dropdown">
+                                            <a class="nav-link p-0 d-flex" href="#">
+                                                <button>ABOUT</button>
+                                                <i class="fa-solid fa-caret-down p-0" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginLeft: '5px', cursor: 'pointer' }}></i>
+                                            </a>
+
+                                            <div class="dropdown-content">
+                                                <li><a href="">ABOUT US </a></li>
+                                                <li><a href="">OUR DOCTORS</a></li>
+                                                <li><a href="">PRICING</a></li>
+                                                <li><a href="">APPOIMENTS</a></li>
+                                                <li><a href="">TESTIMONIALS</a></li>
+                                                <li><a href="">FAQ</a></li>
+
+                                            </div>
+                                        </div>
+                                        {/* <a class="nav-link p-0 d-flex" href="#">
+                                            ABOUT
+                                            <i class="fa-solid fa-caret-down p-0" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginLeft: '5px', cursor: 'pointer' }}></i>
                                         </a>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <ul className='dropdown-content'>
+                                            <li><a href="">bhavya</a></li>
+                                            <li><a href="">bhavya</a></li>
+                                            <li><a href="">bhavya</a></li>
+                                        </ul> */}
+                                        {/* <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                             <li><a class="dropdown-item" href="#">Action</a></li>
                                             <li><a class="dropdown-item" href="#">Another action</a></li>
                                             <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
+                                        </ul> */}
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link p-0" aria-current="page" href="#">SERVICES</a>
