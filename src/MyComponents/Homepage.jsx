@@ -3,8 +3,8 @@ import Navbar from './Navbar';
 import Corosel_one from './Corosel_one';
 import Speciality from './Speciality';
 import Corosel_two_aboutus from './Corosel_two_aboutus';
-
-
+import Innovation from './Innovation';
+import Departments from './Departments';
 
 export default function Homepage() {
     return (
@@ -16,10 +16,9 @@ export default function Homepage() {
                     <Corosel_one />
                     <Speciality />
                     <Corosel_two_aboutus />
+                    <Innovation/>
+                    <Departments/>
                 </div>
-              
-
-
             </section>
 
 

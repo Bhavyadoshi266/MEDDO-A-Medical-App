@@ -19,8 +19,8 @@ export default function Corosel_two_aboutus() {
                                       <li style={{  listStyleType: "circle"}}>Our pediatric services ensure that your children receive the best care from infancy through adolescence.</li>
                                       <li style={{  listStyleType: "circle"}}>Our cardiology services are designed to keep your heart healthy and address any cardiac concerns.</li>
                                     </ul>
-                                    <a href="#"><button className='btn_appointment animate-text py-3 px-5 mb-5'>MAKE AN APPOINTMENT</button></a>
-                                    <a href="#"><button className='btn_aboutus animate-text px-5 py-3 mb-5'>ABOUT US</button></a>
+                                    <a href="#"><button className='btn_appointment animate-text py-3 px-5 mx- mb-5'>MAKE AN APPOINTMENT</button></a>
+                                    <a href="#"><button className='btn_aboutus animate-text px-5 py-3 mx-5'>ABOUT US</button></a>
                                     <div className="Corosel_to_aboutus_count .cotainer animate-text">
                                         <div className="row">
                                             <div className="col-4 Corosel_to_aboutus_header">350+</div>
