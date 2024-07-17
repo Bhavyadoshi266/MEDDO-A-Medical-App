@@ -5,6 +5,8 @@ import Speciality from './Speciality';
 import Corosel_two_aboutus from './Corosel_two_aboutus';
 import Innovation from './Innovation';
 import Departments from './Departments';
+import Review_corousel from './Review_corousel';
+import All_doctors from './All_doctors';
 
 export default function Homepage() {
     return (
@@ -18,6 +20,8 @@ export default function Homepage() {
                     <Corosel_two_aboutus />
                     <Innovation/>
                     <Departments/>
+                    {/* <Review_corousel/> */}
+                    <All_doctors/>
                 </div>
             </section>
 
