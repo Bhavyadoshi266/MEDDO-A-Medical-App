@@ -222,6 +222,8 @@
     text-decoration: none;
     font-size: 24px;
     transition: 0.3s;
+    cursor: pointer;
+    font-weight: 500;
 }
 
 .speciality_title:hover {
@@ -447,3 +449,37 @@
     top: -300px;
     border-radius: 56px 56px 0 0;
 } */
+
+
+/* doctor */
+
+.doctorcard{
+    width: 20rem;
+    border-radius: 20px;
+    border: none;
+}
+
+.doctorcard img{
+    border-radius: 10px;
+}
+
+.doctorlinks {
+    background-color: #3a6cee;
+    color: #ffffff;
+    font-size: 18px;
+    margin: 0;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.abc{
+    position: relative;
+    background-color: cadetblue;
+}
+
+.doctorlinks:hover{
+    transition: 0.3s;
+    position: absolute;
+    transform: rotate(45deg);
+}
