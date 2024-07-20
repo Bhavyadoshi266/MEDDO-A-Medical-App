@@ -201,6 +201,10 @@
 
 /* Speciality */
 
+.speciality{
+    padding: 130px 0 130px 0;
+}
+
 .speciality_readmore {
     color: #3a6cee;
     cursor: pointer;
@@ -215,6 +219,7 @@
 .speciality_text {
     color: #646464;
     font-size: 16px;
+    z-index: 1;
 }
 
 .speciality_title {
@@ -278,7 +283,8 @@
 /* Corosel_two_aboutus */
 
 .Corosel_two_aboutus {
-    padding: 130px 0;
+    padding: 130px 0 0 0 ;
+    /* margin: 130px 0; */
     background-color: #3a6cee;
     border-radius: 56px 56px 0 0;
     position: relative;
@@ -363,9 +369,9 @@
 
 .innovation {
     background-color: #ffffff;
-    padding: 135px 0;
+    padding: 130px 0 0 0;
     position: relative;
-    top: -100px;
+    /* top: -100px; */
     border-radius: 56px 56px 0 0;
 }
 
@@ -380,7 +386,7 @@
 }
 
 .innovation_text {
-    z-index: 1;
+    z-index: 0;
 }
 
 /* Departments */
@@ -388,9 +394,10 @@
 .departments {
     background-color: #3a6cee;
     position: relative;
-    top: -200px;
+    /* top: -200px; */
     border-radius: 56px 56px 56px 56px;
     padding: 130px 0;
+    margin: 70px  0 0 0;
 }
 
 .departments_body {
@@ -441,17 +448,19 @@
 .departmentsnamelink:hover{
     color: #222222;
 }
+/* review_corousel */
 
-/* .all_doctors{
-    background-color: #ffffff;
-    padding: 135px 0;
-    position: relative;
-    top: -300px;
-    border-radius: 56px 56px 0 0;
-} */
+.review_corousel{
+    padding: 130px 0 0 0;
+}
+
 
 
 /* doctor */
+
+.all_doctors{
+    padding: 130px  0 0 0 ;
+}
 
 .doctorcard{
     width: 20rem;
@@ -475,7 +484,7 @@
 
 .abc{
     position: relative;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
 }
 
 .doctorlinks:hover{

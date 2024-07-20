@@ -11,17 +11,16 @@ import All_doctors from './All_doctors';
 export default function Homepage() {
     return (
         <>
-            <section className='homepage '>
+            <section className='homepage m-0 p-0'>
                 <Navbar />
 
-                <div className="p-0" style={{ display: 'grid', gap: '3rem' }}>
+                <div className="p-0">
                     <Corosel_one />
                     <Speciality />
                     <Corosel_two_aboutus />
-                    <Innovation/>
-                    <Departments/>
-                    {/* <Review_corousel/> */}
-                    <All_doctors/>
+                    {/* <Innovation/> */}
+                    <Review_corousel/>
+                    {/* <All_doctors/> */}
                 </div>
             </section>
 

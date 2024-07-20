@@ -29,7 +29,7 @@ export default function Speciality() {
 
     return (
         <>
-            <div className="speciality text-center py-4 ">
+            <div className="speciality text-center ">
                 <div className="wrapper">
                     <p className="speciality_header m-0">WHY CHOOSE US</p>
                     <p className="speciality_headertext pb-5 m-0">What’s our speciality</p>

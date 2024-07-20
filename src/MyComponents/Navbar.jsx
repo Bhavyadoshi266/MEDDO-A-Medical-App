@@ -4,7 +4,7 @@ import logo from './Images/logo.svg'
 export default function Navbar() {
     return (
         <>
-            <div className="navbar_sticky">
+            <div className="navbar_sticky mb-4">
                 <div className="wrapper">
                     <nav class="navbar navbar-expand-lg py-3">
                         <div class="container-fluid">
