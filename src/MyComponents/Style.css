@@ -454,8 +454,6 @@
     padding: 130px 0 0 0;
 }
 
-
-
 /* doctor */
 
 .all_doctors{
@@ -482,13 +480,27 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.abc{
-    position: relative;
-    /* background-color: cadetblue; */
-}
-
-.doctorlinks:hover{
+/* .doctorlinks:hover i{
     transition: 0.3s;
     position: absolute;
     transform: rotate(45deg);
+} */
+
+
+/* footer */
+
+.blogs{
+    background-color: #222222;
+    padding: 130px 0 0 0;
+}
+
+.blogsimg{
+    border-radius: 20px;
+}
+
+.blogs_readmore{
+    background-color: #ffffff;
+    border-radius: 12px;
+    color: #222222;
+    text-decoration: none;
 }

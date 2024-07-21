@@ -50,7 +50,7 @@ export default function All_doctors() {
                                             <p class="card-text speciality_header ">{item.doctorpos}</p>
                                         </div>
                                         <div className="col-2 d-flex justify-content-end abc">
-                                            <p className='d-flex justify-content-center align-content-center my-3 doctorlinks'><i class="fa-solid fa-plus d-flex justify-content-center align-items-center"></i></p>
+                                            <p className='d-flex justify-content-center align-content-center my-3 doctorlinks'><i class="fa-solid fa-plus d-flex justify-content-center align-items-center adc"></i></p>
                                         </div>
                                         {/*<a href="#" class="btn btn-primary">Go somewhere</a>*/}
                                     </div>
