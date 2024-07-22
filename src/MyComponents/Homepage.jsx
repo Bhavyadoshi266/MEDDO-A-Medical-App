@@ -8,6 +8,7 @@ import Departments from './Departments';
 import Review_corousel from './Review_corousel';
 import All_doctors from './All_doctors';
 import Blog from './Blog';
+import Footer from './Footer';
 
 export default function Homepage() {
     return (
@@ -22,11 +23,13 @@ export default function Homepage() {
                     {/* <Innovation/> */}
                     <Review_corousel/>
                     {/* <All_doctors/> */}
+                    <Blog/>
                    
                 </div>
+                <Footer/>
                
             </section>
-            <Blog/>
+            
 
 
         </>
