@@ -12,6 +12,7 @@
     max-width: 1290px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 15px 0 15px ;
 }
 
 .navbar_sticky {
@@ -498,8 +499,16 @@
 .btn_blog {
     background-color: #ffffff;
     border-radius: 20px;
+    color: #111111;
+    border: none;
+    cursor: pointer;
 }
 
+.blogcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .btn_blog:hover {
     border: 1px solid #ffffff;
@@ -509,6 +518,8 @@
 
 .blogsimg {
     border-radius: 20px;
+    width: 100%;
+    height: auto;
 }
 
 .blogs_readmore {
@@ -516,6 +527,8 @@
     border-radius: 12px;
     color: #111111;
     text-decoration: none;
+    border: none;
+    cursor: pointer;
 }
 
 .blogs_readmore:hover {
@@ -534,7 +547,7 @@
 .blog_img_container {
     position: relative;
     overflow: hidden;
-    background-color: t;
+    border-radius: 5px;
 }
 
 .blog_contentlink {
@@ -583,3 +596,30 @@
     color: #3a6cee;
     background-color: transparent;
 }
+
+.footer_text {
+    color: #ffffff;
+    font-size: 24px;
+    margin: 10px 0 10px 0;
+}
+
+.footer_text_num {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+.footer_border_bottom {
+    border-top: 1px solid #ffffff;
+    /* margin: 30px 0 0 0; */
+    padding: 40px 0 0 0;
+    width: 100%;
+}
+
+.footer_copyright {
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+}
+

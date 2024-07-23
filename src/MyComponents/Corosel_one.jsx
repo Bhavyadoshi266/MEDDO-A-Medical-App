@@ -48,8 +48,8 @@ export default function Corosel_one() {
                                 </p>
                                 <a href="#"><button className='btn_appointment animate-text py-3 px-5 mt-4'>MAKE AN APPOINTMENT</button></a>
                             </div>
-                            <div className="Corosel_one_right col-12 col-lg-6 mb-3 mb-lg-0 animate-image">
-                                <img src={corosel_oneone} alt="Carousel Image" className="img-fluid" />
+                            <div className="Corosel_one_right col-12 col-lg-6 mb-lg-0 animate-image">
+                                <img src={corosel_oneone} alt="Carousel Image" className="img-fluid"/>
                             </div>
                         </div>
                     </div>
