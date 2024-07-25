@@ -34,13 +34,13 @@ export default function All_doctors() {
             <div className="all_doctors">
                 <div className="wrapper">
                     <div className="all_doctor d-flex justify-content-between align-items-center mb-5">
-                        <p className='d-flex justify-content-center align-items-center Corosel_to_aboutus_header' style={{ color: "#3a6cee" }}>Doctors in our clinic</p>
+                        <p className='d-flex justify-content-center align-items-center Corosel_to_aboutus_header animate-text' style={{ color: "#3a6cee" }}>Doctors in our clinic</p>
                         <a href="#" className='p-0 m-0'>
                             <button className='btn_aboutus animate-text py-3 px-5'>ALL DOCTORS</button>
                         </a>
                     </div>
                     <div className="container">
-                        <div className="row d-flex justify-content-between align-items-center ">
+                        <div className="row d-flex justify-content-between align-items-center animate-text">
                             {doctors.map((item) => (
                                 <div class="card p-2 my-3 doctorcard" style={{ width: '18rem' }} >
                                     <img src={item.doctorimg} class="card-img-top" alt="..." />

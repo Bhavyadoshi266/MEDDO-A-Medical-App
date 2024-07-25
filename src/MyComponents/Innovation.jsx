@@ -75,7 +75,7 @@ export default function Innovation() {
                                 </div>
                             </div>
                             <div className="col-12 mt-5 text-center text-md-end innovation_img">
-                                <img src={innovation_bgimg} alt="Innovation Background" className="img-fluid" style={{ maxWidth: '100%', height: 'auto' }} width="590px" />
+                                <img src={innovation_bgimg} alt="Innovation Background" className="img-fluid" style={{ Width: '100%', height: 'auto' }}  />
                             </div>
 
                         </div>

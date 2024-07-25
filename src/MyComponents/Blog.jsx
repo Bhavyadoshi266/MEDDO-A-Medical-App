@@ -94,16 +94,16 @@ export default function Blog() {
             <section className="blogs">
                 <div className="wrapper">
                     <div className="d-flex justify-content-between align-items-center mb-4">
-                        <p className='Corosel_to_aboutus_header p-0 m-0'>
+                        <p className='Corosel_to_aboutus_header p-0 m-0 animate-text'>
                             Latest posts & news
                         </p>
                         <a href="#" className='p-0 m-0'>
-                            <button className='btn_blog animate-text py-3 px-5'>ALL POSTS</button>
+                            <button className='btn_blog animate-text py-3 px-5 animate-text'>ALL POSTS</button>
                         </a>
                     </div>
                     <div className="row">
                         {blogs_cards.map((item) => (
-                            <div key={item.id} className="col-12 col-md-6 col-lg-4 mb-3 blogcard">
+                            <div key={item.id} className="col-12 col-md-6 col-lg-4 mb-3 blogcard animate-text">
                                 <div className="card bg-transparent blog_img_container text-white h-100">
                                     <img src={item.img} className="card-img blogsimg" alt="..." />
                                     <div className="card-img-overlay d-flex flex-column justify-content-end">

@@ -6,10 +6,10 @@ export default function Footer() {
         <>
             <section className='footer'>
                 <div className="wrapper">
-                    <div className="footer_logo">
+                    <div className="footer_logo animate-text">
                         <img src={logo2} alt="Logo" className='mb-3' height='45.8' />
                     </div>
-                    <div className="container px-0 mb-5">
+                    <div className="container px-0 mb-5 animate-text">
                         <div className="row">
                             <div className="col-12 col-md-6">
                                 <p className='py-3 m-0' style={{ color: "#ffffff", fontSize: '48px' }}>Have a question?</p>

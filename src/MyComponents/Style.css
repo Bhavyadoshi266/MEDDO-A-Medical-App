@@ -295,7 +295,8 @@
     display: grid;
     align-items: center;
     justify-content: space-between;
-    column-gap: 80px;
+    /* column-gap: 80px; */
+    padding-left: 20px;
 }
 
 .btn_aboutus {
@@ -316,11 +317,14 @@
     /* max-width: 47%; */
     /* width:47%; */
     object-fit: cover;
+    padding-right: 40px;
+
 }
 
 .Corosel_to_aboutus_right {
     display: inline;
     column-gap: 10px;
+    padding-left: 40px;
 }
 
 .Corosel_to_aboutus_left img {
@@ -348,6 +352,7 @@
 .count_name {
     font-size: 18px;
     color: #ffffff;
+    padding: 0;
 }
 
 @keyframes slideIn {
@@ -623,3 +628,12 @@
     text-align: center;
 }
 
+
+
+
+@media(max-width : 1000px) {
+    .innovation_img{
+        height: auto;
+        width: auto;
+    }
+}
