@@ -265,7 +265,6 @@
         transform: translateY(100%);
         opacity: 0;
     }
-
     to {
         transform: translateY(0);
         opacity: 1;
@@ -628,12 +627,116 @@
     text-align: center;
 }
 
-
-
-
-@media(max-width : 1000px) {
+/* @media(max-width : 1000px) {
     .innovation_img{
         height: auto;
         width: auto;
     }
+} */
+
+
+.services{
+    background-color: #f9f9f9;
+}
+
+.services_corosual_section{
+    background-color: #3a6cee;
+    color: #ffffff;
+    border-radius: 20px ;
+    padding: 80px 0 160px 0;
+    position: relative;
+}
+
+.services_corosual_section_content{
+    text-align: center;
+    max-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.textheader{
+    font-size: 78px;
+    margin: 10px 0;
+}
+
+.logo_services{
+    opacity: .1;
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    top: auto;
+    bottom: 0%;
+    left: -4%;
+    right: auto;
+}
+
+@media screen and (min-width: 1280px) {
+    .logo_services {
+        width: 280px;
+        height: 280px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .logo_services {
+        width: 240px;
+        height: 240px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .logo_services {
+        width: 200px;
+        height: 200px;
+        bottom: -2%;
+        left: -8%;
+    }
+}
+@media screen and (max-width: 479px) {
+    .logo_services {
+        bottom: -8%;
+    }
+}
+
+.service_card{
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+}
+
+.service_img{
+    border-radius: 12px;
+}
+
+.service_card_header{
+    text-decoration: none;
+    font-size: 24px;
+    color:#222222 ;
+    transition:all 0.3s;
+    margin: 5px 0 10px;
+}
+
+.service_card_header:hover{
+    color: #3a6cee;
+}
+
+.service_card_text{
+    color: #646464;
+    font-size: 16px;
+    margin: 10px 0;
+    padding: 0 20px 0 0;
+}
+
+.service_card_link{
+    text-decoration: none;
+    font-size: 16px;
+    color: #3a6cee;
+    transition:all 0.3s;
+}
+
+.service_card_link:hover{
+    color: #222222;
+}
+
+.services_services_section{
+    position: absolute;
+    top: 30%;
 }

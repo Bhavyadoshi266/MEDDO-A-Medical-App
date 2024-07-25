@@ -1,13 +1,21 @@
 import './App.css';
-import Navbar from './MyComponents/Navbar';
+import Blog from './MyComponents/Blog';
 import Homepage from './MyComponents/Homepage';
+import Navbar from './MyComponents/Navbar';
+import Services from './MyComponents/Services';
 import './MyComponents/Style.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
-    {/* <Navbar/> */}
-    <Homepage/>
+     <BrowserRouter>
+     {/* <Navbar /> */}
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/services" element={<Services />} />
+      </Routes>
+    </BrowserRouter>
     </>
   );
 }
