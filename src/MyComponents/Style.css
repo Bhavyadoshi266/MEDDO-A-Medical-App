@@ -737,6 +737,8 @@
 }
 
 .services_services_section{
-    position: absolute;
-    top: 30%;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
 }
+

@@ -138,7 +138,7 @@ export default function Services() {
             <div className="services py-3">
                 <Navbar />
                 <div className="wrapper">
-                    <div className="services_corosual_section text-center">
+                    <div className="services_corosual_section text-center ">
                         <div className="services_corosual_section_content">
                             <h1 className="p-0 textheader">Our Services</h1>
                             <p className="p-0 my-2">Medicine is an ever-evolving field that blends science, technology, and compassion to improve and save lives</p>
@@ -146,12 +146,12 @@ export default function Services() {
                         </div>
                     </div>
                     
-                    <div className="services_services_section container">
+                    <div className="services_services_section container ">
                         <div className="row">
                             {services.map((item) => (
-                                <div key={item.id} className="col-12 col-md-6 col-lg-6 mb-3 ">
-                                    <div class="card mb-3 service_card" >
-                                        <div class="row g-4">
+                                <div key={item.id} className="col-12 col-md-6 col-lg-6 mb-3">
+                                    <div class="card mb-3 service_card " >
+                                        <div class="row g-4 ">
                                             <div class="col-md-4">
                                                 <img src={item.serviesimg} class="img-fluid service_img" alt="..."/>
                                             </div>
