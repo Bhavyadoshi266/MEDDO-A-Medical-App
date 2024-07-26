@@ -59,15 +59,15 @@
 //                     </div>
 //                     <div className="services_services_section">
 //                         {services.map((item) => (
-//                             <div class="card mb-3" style={{ maxWidth: '540px' }}>
-//                                 <div class="row g-0">
-//                                     <div class="col-md-4">
-//                                         <img src={item.serviesimg} class="img-fluid rounded-start" alt="..." />
+//                             <div className="card mb-3" style={{ maxWidth: '540px' }}>
+//                                 <div className="row g-0">
+//                                     <div className="col-md-4">
+//                                         <img src={item.serviesimg} className="img-fluid rounded-start" alt="..." />
 //                                     </div>
-//                                     <div class="col-md-8">
-//                                         <div class="card-body">
-//                                             <h5 class="card-title">{item.servicename}</h5>
-//                                             <p class="card-text">{item.servicedesc}</p>
+//                                     <div className="col-md-8">
+//                                         <div className="card-body">
+//                                             <h5 className="card-title">{item.servicename}</h5>
+//                                             <p className="card-text">{item.servicedesc}</p>
 //                                             <a href="">READ MORE</a>
 //                                         </div>
 //                                     </div>
@@ -92,6 +92,7 @@ import service_three from './Images/service_three.jpg';
 import service_four from './Images/service_four.jpg';
 import service_five from './Images/service_five.jpg';
 import service_six from './Images/service_six.jpg';
+import Footer from './Footer';
 
 export default function Services() {
     const services = [
@@ -135,7 +136,7 @@ export default function Services() {
 
     return (
         <>
-            <div className="services py-3">
+            <div className="services">
                 <Navbar />
                 <div className="wrapper">
                     <div className="services_corosual_section text-center ">
@@ -145,38 +146,63 @@ export default function Services() {
                             <img src={logo} alt="Service Logo" className="logo_services img-fluid" />
                         </div>
                     </div>
-                    
-                    <div className="services_services_section container ">
-                        <div className="row">
-                            {services.map((item) => (
-                                <div key={item.id} className="col-12 col-md-6 col-lg-6 mb-3">
-                                    <div class="card mb-3 service_card " >
-                                        <div class="row g-4 ">
-                                            <div class="col-md-4">
-                                                <img src={item.serviesimg} class="img-fluid service_img" alt="..."/>
-                                            </div>
-                                            <div class="col-md-8">
-                                                <div class="card-body p-0">
-                                                    <h5 class="card-title"> <a href="" className='service_card_header'>{item.servicename}</a> </h5>
-                                                    <p class="card-text service_card_text">{item.servicedesc}</p>
-                                                    <a href="#" className="service_card_link">READ MORE</a>
+                </div>
+
+                
+                <div className="services_service_section">
+                    <div className="wrapper">
+                        <div className="services_services_section  ">
+                            <div className="container">
+                                <div className="row ">
+                                    {services.map((item) => (
+                                        <div key={item.id} className="col-12 col-md-6 col-lg-6 mb-3 ">
+                                            <div className="card service_card" >
+                                                <div className="row g-4 ">
+                                                    <div className="col-md-4">
+                                                        <img src={item.serviesimg} className="img-fluid service_img" alt="..." />
+                                                    </div>
+                                                    <div className="col-md-8">
+                                                        <div className="card-body p-0">
+                                                            <h5 className="card-title"> <a href="" className='service_card_header'>{item.servicename}</a> </h5>
+                                                            <p className="card-text service_card_text">{item.servicedesc}</p>
+                                                            <a href="#" className="service_card_link">READ MORE</a>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
+
                                         </div>
-                                    </div>
-                                    {/* <div className="card h-100" style={{ maxWidth: '540px' }}>
-                                        <img src={item.serviesimg} className="card-img-top" alt={item.servicename} />
-                                        <div className="card-body">
-                                            <h5 className="card-title">{item.servicename}</h5>
-                                            <p className="card-text">{item.servicedesc}</p>
-                                            <a href="#" className="btn btn-primary">READ MORE</a>
-                                        </div>
-                                    </div> */}
+                                    ))}
                                 </div>
-                            ))}
+                            </div>
                         </div>
                     </div>
                 </div>
+
+
+                <div className="services_experience">
+                    <div className="wrapper">
+                        <div className="row">
+                            <div className="col-3 border-end">
+                                <p className='experience_text mb-0'>17+</p>
+                                <p className='mb-0'>Years Experience</p>
+                            </div>
+                            <div className="col-3 border-end">
+                                <p className='experience_text mb-0'>34</p>
+                                <p className='mb-0'>Awards Nominees</p>
+                            </div>
+                            <div className="col-3 border-end">
+                                <p className='experience_text mb-0'>7K+</p>
+                                <p className='mb-0'>Happy Customers</p>
+                            </div>
+                            <div className="col-3">
+                                <p className='experience_text mb-0'>99%</p>
+                                <p className='mb-0'>Happy Clients</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <Footer />
             </div>
         </>
     );

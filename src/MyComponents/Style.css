@@ -12,7 +12,7 @@
     max-width: 1290px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 15px 0 15px ;
+    padding: 0 15px 0 15px;
 }
 
 .navbar_sticky {
@@ -265,6 +265,7 @@
         transform: translateY(100%);
         opacity: 0;
     }
+
     to {
         transform: translateY(0);
         opacity: 1;
@@ -460,6 +461,17 @@
     padding: 130px 0 0 0;
 }
 
+.carousel-inner {
+/* margin:0 100px; */
+    text-align: center;
+    max-width: 1100px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+}
+
+
 /* doctor */
 
 .all_doctors {
@@ -635,31 +647,32 @@
 } */
 
 
-.services{
+.services {
     background-color: #f9f9f9;
+    padding-top: 15px;
 }
 
-.services_corosual_section{
+.services_corosual_section {
     background-color: #3a6cee;
     color: #ffffff;
-    border-radius: 20px ;
+    border-radius: 20px;
     padding: 80px 0 160px 0;
     position: relative;
 }
 
-.services_corosual_section_content{
+.services_corosual_section_content {
     text-align: center;
     max-width: 580px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.textheader{
+.textheader {
     font-size: 78px;
     margin: 10px 0;
 }
 
-.logo_services{
+.logo_services {
     opacity: .1;
     width: 260px;
     height: 260px;
@@ -676,12 +689,14 @@
         height: 280px;
     }
 }
+
 @media screen and (max-width: 991px) {
     .logo_services {
         width: 240px;
         height: 240px;
     }
 }
+
 @media screen and (max-width: 767px) {
     .logo_services {
         width: 200px;
@@ -690,55 +705,93 @@
         left: -8%;
     }
 }
+
 @media screen and (max-width: 479px) {
     .logo_services {
         bottom: -8%;
     }
 }
 
-.service_card{
+.service_card {
     border-radius: 20px;
     border: none;
     padding: 10px;
 }
 
-.service_img{
+.services_service_section {
+    margin-top: -80px;
+    padding-bottom: 130px;
+}
+
+.service_img {
     border-radius: 12px;
 }
 
-.service_card_header{
+.service_card_header {
     text-decoration: none;
     font-size: 24px;
-    color:#222222 ;
-    transition:all 0.3s;
+    color: #222222;
+    transition: all 0.3s;
     margin: 5px 0 10px;
 }
 
-.service_card_header:hover{
+.service_card_header:hover {
     color: #3a6cee;
 }
 
-.service_card_text{
+.service_card_text {
     color: #646464;
     font-size: 16px;
     margin: 10px 0;
     padding: 0 20px 0 0;
 }
 
-.service_card_link{
+.service_card_link {
     text-decoration: none;
     font-size: 16px;
     color: #3a6cee;
-    transition:all 0.3s;
+    transition: all 0.3s;
 }
 
-.service_card_link:hover{
+.service_card_link:hover {
     color: #222222;
 }
 
-.services_services_section{
+.services_services_section {
     width: 98%;
     margin-left: auto;
     margin-right: auto;
 }
 
+/* services_experience */
+
+.services_experience {
+    background-color: #3a6cee;
+    border-radius: 50px;
+    padding: 80px 0;
+    color: #f5f8f9;
+    text-align: center;
+}
+
+@media screen and (min-width: 1280px) {
+    .services_experience {
+        padding-top: 130px;
+        padding-bottom: 130px;
+    }
+}
+
+.experience_text {
+    font-size: 100px;
+}
+
+@media screen and (min-width: 1440px) {
+    .experience_text {
+        font-size: 100px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .experience_text {
+        font-size: 80px;
+    }
+}

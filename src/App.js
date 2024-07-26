@@ -1,4 +1,5 @@
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Blog from './MyComponents/Blog';
 import Homepage from './MyComponents/Homepage';
 import Navbar from './MyComponents/Navbar';

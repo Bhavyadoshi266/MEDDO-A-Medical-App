@@ -42,17 +42,17 @@ export default function All_doctors() {
                     <div className="container">
                         <div className="row d-flex justify-content-between align-items-center animate-text">
                             {doctors.map((item) => (
-                                <div class="card p-2 my-3 doctorcard" style={{ width: '18rem' }} >
-                                    <img src={item.doctorimg} class="card-img-top" alt="..." />
-                                    <div class="card-body d-flex px-0">
+                                <div className="card p-2 my-3 doctorcard" style={{ width: '18rem' }} >
+                                    <img src={item.doctorimg} className="card-img-top" alt="..." />
+                                    <div className="card-body d-flex px-0">
                                         <div className="col-10 ">
-                                            <a class="card-title speciality_title">{item.doctorname}</a>
-                                            <p class="card-text speciality_header ">{item.doctorpos}</p>
+                                            <a className="card-title speciality_title">{item.doctorname}</a>
+                                            <p className="card-text speciality_header ">{item.doctorpos}</p>
                                         </div>
                                         <div className="col-2 d-flex justify-content-end abc">
-                                            <p className='d-flex justify-content-center align-content-center my-3 doctorlinks'><i class="fa-solid fa-plus d-flex justify-content-center align-items-center adc"></i></p>
+                                            <p className='d-flex justify-content-center align-content-center my-3 doctorlinks'><i className="fa-solid fa-plus d-flex justify-content-center align-items-center adc"></i></p>
                                         </div>
-                                        {/*<a href="#" class="btn btn-primary">Go somewhere</a>*/}
+                                        {/*<a href="#" className="btn btn-primary">Go somewhere</a>*/}
                                     </div>
                                 </div>
                             ))}

@@ -21,8 +21,8 @@ export default function Homepage() {
                     <Speciality />
                     <Corosel_two_aboutus />
                     {/* <Innovation/> */}
-                    {/* <Review_corousel/> */}
-                    <All_doctors/>
+                    <Review_corousel/>
+                    {/* <All_doctors/> */}
                     <Blog/>
                    
                 </div>
