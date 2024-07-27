@@ -93,6 +93,7 @@ import service_four from './Images/service_four.jpg';
 import service_five from './Images/service_five.jpg';
 import service_six from './Images/service_six.jpg';
 import Footer from './Footer';
+import Review_corousel from './Review_corousel';
 
 export default function Services() {
     const services = [
@@ -202,6 +203,7 @@ export default function Services() {
                         </div>
                     </div>
                 </div>
+                <Review_corousel/>
                 <Footer />
             </div>
         </>

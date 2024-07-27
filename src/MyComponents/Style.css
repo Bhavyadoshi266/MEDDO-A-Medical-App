@@ -464,7 +464,7 @@
 .carousel-inner {
 /* margin:0 100px; */
     text-align: center;
-    max-width: 1100px;
+    /* max-width: 1100px; */
     /* display: flex;
     align-items: center;
     justify-content: center;
@@ -794,4 +794,21 @@
     .experience_text {
         font-size: 80px;
     }
+}
+
+/* department */
+
+.department{
+    background-color: #f9f9f9;
+}
+
+.img_department{
+    background-image: linear-gradient(rgba(17, 17, 17, .3), rgba(17, 17, 17, .3)), linear-gradient(rgba(58, 108, 238, .4), rgba(58, 108, 238, .4)) url("");
+    background-position: 0 0, 0 0, 50%;
+    background-repeat: repeat, repeat, no-repeat;
+    background-size: auto, auto, cover;
+    justify-content: center;
+    align-items: center;
+    padding-top: 180px;
+    display: flex;
 }

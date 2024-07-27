@@ -37,7 +37,7 @@ export default function Navbar() {
                                         <Link className="nav-link p-0" aria-current="page" to="services">SERVICES</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link p-0" aria-current="page" href="#">DEPARTMENT</a>
+                                        <Link className="nav-link p-0" aria-current="page" to="department">DEPARTMENT</Link>
                                     </li>
                                     <li className="nav-item">
                                         <a className="nav-link p-0" aria-current="page" href="#">DOCTORS</a>
