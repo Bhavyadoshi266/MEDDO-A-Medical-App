@@ -14,7 +14,7 @@ export default function Homepage() {
     return (
         <>
             <section className='homepage m-0 p-0'>
-                <Navbar />
+                {/* <Navbar /> */}
 
                 <div className="p-0">
                     <Corosel_one />
@@ -26,7 +26,7 @@ export default function Homepage() {
                     <Blog/>
                    
                 </div>
-                <Footer/>
+                {/* <Footer/> */}
                
             </section>
             

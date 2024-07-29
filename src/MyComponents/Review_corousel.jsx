@@ -9,30 +9,36 @@ export default function Review_corousel() {
             id: 1,
             departmentname: "TESTIMONIALS",
             reviewtext: "“Thanks to Dr. Lee, I finally feel like my health is under control. The medicine services were a game-changer during a busy period in my life, allowing me to get the care I needed without missing a beat. Highly recommend for anyone looking for flexible and comprehensive healthcare!”",
-            reviewername: "bhavya",
+            reviewername: "Leslie Alexander",
         },
         {
             id: 2,
             departmentname: "TESTIMONIALS",
             reviewtext: "“Thanks to Dr. Lee, I finally feel like my health is under control. The medicine services were a game-changer during a busy period in my life, allowing me to get the care I needed without missing a beat. Highly recommend for anyone looking for flexible and comprehensive healthcare!”",
-            reviewername: "neet",
+            reviewername: "John Smith",
         }, {
             id: 3,
             departmentname: "TESTIMONIALS",
             reviewtext: "“Thanks to Dr. Lee, I finally feel like my health is under control. The medicine services were a game-changer during a busy period in my life, allowing me to get the care I needed without missing a beat. Highly recommend for anyone looking for flexible and comprehensive healthcare!”",
-            reviewername: "deep",
+            reviewername: "Michael Brown",
         }, {
             id: 4,
             departmentname: "TESTIMONIALS",
             reviewtext: "“Thanks to Dr. Lee, I finally feel like my health is under control. The medicine services were a game-changer during a busy period in my life, allowing me to get the care I needed without missing a beat. Highly recommend for anyone looking for flexible and comprehensive healthcare!”",
-            reviewername: "shyam",
+            reviewername: "Sarah Wilson",
+        },
+        {
+            id: 4,
+            departmentname: "TESTIMONIALS",
+            reviewtext: "“Thanks to Dr. Lee, I finally feel like my health is under control. The medicine services were a game-changer during a busy period in my life, allowing me to get the care I needed without missing a beat. Highly recommend for anyone looking for flexible and comprehensive healthcare!”",
+            reviewername: "Laura Anderson",
         },
     ]
     return (
         <>
             <div className="review_corousel">
                 <div className="wrapper">
-                    <div className="abc">
+
                     <Carousel>
                         {reviews.map((item, index) => (
                             <Carousel.Item key={index}>
@@ -44,7 +50,7 @@ export default function Review_corousel() {
                             </Carousel.Item>
                         ))}
                     </Carousel>
-                    </div>
+
 
                 </div>
                 <All_doctors />

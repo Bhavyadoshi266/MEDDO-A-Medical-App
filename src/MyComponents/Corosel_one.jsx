@@ -35,7 +35,7 @@ import corosel_oneone from './Images/corosel_oneone.webp';
 export default function Corosel_one() {
     return (
         <>
-            <div className="Corosel_one py-1">
+            <div className="Corosel_one">
                 <div className="wrapper">
                 <div className="container">
                     <div className="row">

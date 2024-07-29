@@ -138,7 +138,7 @@ export default function Services() {
     return (
         <>
             <div className="services">
-                <Navbar />
+                {/* <Navbar /> */}
                 <div className="wrapper">
                     <div className="services_corosual_section text-center ">
                         <div className="services_corosual_section_content">
@@ -204,7 +204,7 @@ export default function Services() {
                     </div>
                 </div>
                 <Review_corousel/>
-                <Footer />
+                {/* <Footer /> */}
             </div>
         </>
     );

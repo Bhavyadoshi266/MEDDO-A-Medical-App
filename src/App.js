@@ -7,19 +7,20 @@ import Services from './MyComponents/Services';
 import './MyComponents/Style.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Department from './MyComponents/Department';
+import Footer from './MyComponents/Footer';
 
 function App() {
   return (
     <>
-     <BrowserRouter>
-     {/* <Navbar /> */}
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/department" element={<Department/>} />
-
-      </Routes>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/department" element={<Department />} />
+        </Routes>
+        <Footer/>
+      </BrowserRouter>
     </>
   );
 }
