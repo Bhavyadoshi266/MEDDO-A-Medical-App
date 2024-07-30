@@ -930,3 +930,137 @@
     color: #222222;
     transform: scale(1.03);
 }
+
+.work_process{
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+}
+
+.work_process_left{
+    position: sticky;
+    position: sticky;
+    top: 20px; /* Adjust as necessary */
+    align-self: flex-start;
+    z-index: 100; 
+    transition: all 0.3s;
+}
+
+/* .work_process_container{
+    display: flex;
+} */
+
+.work_process_container_steps{
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 10px 20px ;
+}
+
+.work_process_right{
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    flex-direction: column;
+    display: flex;
+    max-height: 100vh; /* Ensures it takes up the full viewport height */
+    overflow-y: auto; /* Allows vertical scrolling */
+    padding-left: 20px;
+}
+
+.processno{
+    margin: 5px 20px 0 0 ;
+}
+
+.processid{
+    background-color:rgba(58, 108, 238, .7);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 26px;
+}
+
+.processname{
+    font-size: 28px;
+    margin: 10px 0;
+    color: #222222;
+    font-weight: 500;
+}
+
+.processdesc{
+    font-size: 16px;
+    color: #646464;
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 1350px) {
+    .work_process {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.join_team_img{
+    background-image:linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("Images/join_team.webp");
+    background-position: 0 0, 50%;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+}
+
+@media screen and (min-width: 1080px) {
+    .join_team_img {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
+.join_team_img {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    position: relative;
+}
+
+.join_team_container{
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    flex-direction: column;
+    display: flex;
+}
+
+.join_teamlink{
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #222222;
+    padding: 14px 44px;
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+
+.join_teamlink:hover{
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+    .join_team_container {
+        text-align: center;
+        grid-template-columns: auto;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 991px) {
+    .join_team_container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
