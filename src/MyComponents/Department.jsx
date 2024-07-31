@@ -6,6 +6,7 @@ import departmentthree from './Images/departmentthree.jpg'
 import departmentfour from './Images/departmentfour.jpg'
 import departmentfive from './Images/departmentfive.jpg'
 import departmentsix from './Images/departmentsix.jpg'
+import FAQ from './FAQ';
 
 
 export default function Department() {
@@ -79,28 +80,6 @@ export default function Department() {
                     </div>
                 </div>
 
-                {/* <div className="wrapper">
-                    <div className="department_section_card">
-                        {department.map((item) => (
-                            <div class="card mb-3">
-                                <div class="row g-0">
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h5 class="card-title">{item.departmentname}</h5>
-                                            <p class="card-text">{item.departmentdesc}</p>
-                                            <a href="">READ MORE </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                      <a href="" className='department_image_link'> <img src={item.departmentimg} class="img-fluid rounded-start department_image" alt="..." /></a> 
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-
-                </div> */}
-
                 <div className="wrapper">
                     <div className="container department_section_card">
                         <div className="row d_section_card">
@@ -153,7 +132,7 @@ export default function Department() {
 
                     </div>
 
-             
+
 
                 </div>
                 <All_doctors />
@@ -191,8 +170,8 @@ export default function Department() {
                         </div>
                     </div>
                 </div>
+                <FAQ />
 
-                
 
 
             </section>
