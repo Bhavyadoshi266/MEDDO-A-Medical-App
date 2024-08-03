@@ -1069,3 +1069,53 @@
 .faq{
     padding: 130px 0;
 }
+
+/* price */
+
+.price{
+    background-color: #f5f8f9;
+}
+
+.price_corosul{
+    background-color: #111111;
+    padding: 130px 0;
+    border-radius: 25px;
+}
+
+.price_corosul_constant{
+    text-align: center;
+    max-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.price_plan{
+    padding: 130px 0;
+}
+
+.price_plan_header{
+    font-weight: 500;
+    font-size: 48px;
+    color: #222222;
+}
+
+.price_plan_info{
+    border-radius: 10px;
+    background-color: #3a6cee;
+    text-align: center;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin:0 20px;
+    display: flex;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.pricing_container{
+    background-color: #ffffff;
+    padding: 10px 10px 20px;
+    border-radius: 20px;
+}

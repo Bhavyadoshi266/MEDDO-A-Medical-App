@@ -37,7 +37,7 @@ export default function FAQ() {
 
     return (
         <>
-            <section className='faq text-center'>
+            {/* <section className='faq text-center'>
                 <div className="wrapper">
                     <p className='p-0 m-0' style={{ color: '#3a6cee', fontWeight: '400' }}>FAQ</p>
                     <p className='' style={{ fontSize: "48px", color: '#222222', fontWeight: '500' }}>Answers to common questions</p>
@@ -55,14 +55,12 @@ export default function FAQ() {
                                         </Accordion.Item>
                                     ))}
                                 </Accordion>
-
                             </div>
-
                         </div>
                     </div>
-                </div>
 
-            </section>
+                </div>
+            </section> */}
 
 
             {/* <section className='faq text-center'>

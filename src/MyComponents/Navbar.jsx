@@ -24,7 +24,7 @@ export default function Navbar() {
                                                 <div className="dropdown-content">
                                                     <li><a href="">ABOUT US </a></li>
                                                     <li><a href="">OUR DOCTORS</a></li>
-                                                    <li><a href="">PRICING</a></li>
+                                                    <li><Link to="">PRICING</Link></li>
                                                     <li><a href="">APPOIMENTS</a></li>
                                                     <li><a href="">TESTIMONIALS</a></li>
                                                     <li><a href="">FAQ</a></li>
