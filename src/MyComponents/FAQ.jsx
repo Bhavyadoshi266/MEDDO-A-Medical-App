@@ -37,7 +37,7 @@ export default function FAQ() {
 
     return (
         <>
-            {/* <section className='faq text-center'>
+            {/* <section className='faq text-center animate-text'>
                 <div className="wrapper">
                     <p className='p-0 m-0' style={{ color: '#3a6cee', fontWeight: '400' }}>FAQ</p>
                     <p className='' style={{ fontSize: "48px", color: '#222222', fontWeight: '500' }}>Answers to common questions</p>
@@ -63,7 +63,7 @@ export default function FAQ() {
             </section> */}
 
 
-            {/* <section className='faq text-center'>
+            {/* <section className='faq text-center animate-text'>
                 <div className="wrapper">
                     <p className='p-0 m-0' style={{ color: '#3a6cee', fontWeight: '400' }}>FAQ</p>
                     <p style={{ fontSize: "48px", color: '#222222', fontWeight: '500' }}>Answers to common questions</p>

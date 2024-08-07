@@ -53,7 +53,7 @@ export default function Review_corousel() {
 
 
                 </div>
-                <All_doctors />
+                {/* <All_doctors /> */}
             </div >
         </>
     )

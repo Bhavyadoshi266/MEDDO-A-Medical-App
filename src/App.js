@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Department from './MyComponents/Department';
 import Footer from './MyComponents/Footer';
 import Price from './MyComponents/Price';
+import Contact_us from './MyComponents/Contact_us';
 
 function App() {
   return (
@@ -20,6 +21,10 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/department" element={<Department />}/>
           <Route path="/price" element={<Price />}/>
+          <Route path="/homepage" element={<Homepage />}/>
+          <Route path="/contact_us" element={<Contact_us />}/>
+
+
 
         </Routes>
         <Footer/>

@@ -74,21 +74,21 @@ export default function Department() {
             <section className='department'>
 
                 <div className="img_department">
-                    <div className="department_section_content">
+                    <div className="department_section_content  animate-text">
                         <h1 className="p-0 textheader">Our Services</h1>
                         <p className="p-0 my-2 text-white">Medicine is a vast and dynamic field dedicated to the maintenance and restoration of health through the prevention, diagnosis, treatment.</p>
                     </div>
                 </div>
 
                 <div className="wrapper">
-                    <div className="container department_section_card">
+                    <div className="container department_section_card ">
                         <div className="row d_section_card">
                             {department.map((item) => (
                                 <div className="col-md-12" key={item.id}>
-                                    <div className="card h-100 department_card ">
-                                        <div className="row g-0">
-                                            <div className="col-md-8">
-                                                <div className="card-body  department_card_body">
+                                    <div className="card h-100 department_card animate-text">
+                                        <div className="row g-0 animate-text">
+                                            <div className="col-md-8 ">
+                                                <div className="card-body department_card_body">
                                                     <div className=" d-flex flex-column justify-content-center">
                                                         <h5 className="card-title col-12"><a href="" className='department_card_header'>{item.departmentname}</a></h5>
                                                         <p className="card-text department_card_text col-12 mb-4">{item.departmentdesc}</p>
@@ -110,14 +110,14 @@ export default function Department() {
 
                     <div className="work_process .container">
                         <div className="row ">
-                            <div className="col-11 work_process_left">
+                            <div className="col-11 work_process_left animate-text">
                                 <p className='Corosel_to_aboutus_header animate-text' style={{ color: "#222222", fontWeight: '500' }}>Our work process at Meddoc</p>
                                 <p className='processdesc'>At Meddoc, we follow a comprehensive and patient-centered work process to ensure the highest quality of care.</p>
                             </div>
                         </div>
                         <div className="col-12 work_process_right">
                             {work_process.map((item) => (
-                                <div className='work_process_container d-flex'>
+                                <div className='work_process_container d-flex animate-text'>
                                     <div className="col-1 d-flex justify-content-center processno   ">
                                         <p className='processid'>{item.id}</p>
                                     </div>
@@ -155,9 +155,9 @@ export default function Department() {
                 </div> */}
 
 
-                <div className="join_team">
+                <div className="join_team ">
                     <div className="join_team_img">
-                        <div className="wrapper container">
+                        <div className="wrapper container animate-text">
                             <div className="row join_team_container ">
                                 <div className="col-lg-7 col-md-12 mb-3">
                                     <p style={{ fontSize: "48px", color: '#ffffff', lineHeight: '1.2em' }}>Join our Meddoc team and help make the world a better place!</p>

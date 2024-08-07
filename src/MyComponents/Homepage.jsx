@@ -22,7 +22,7 @@ export default function Homepage() {
                     <Corosel_two_aboutus />
                     {/* <Innovation/> */}
                     <Review_corousel/>
-                    {/* <All_doctors/> */}
+                    <All_doctors/>
                     <Blog/>
                    
                 </div>

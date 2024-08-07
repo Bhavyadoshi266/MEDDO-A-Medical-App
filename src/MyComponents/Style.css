@@ -483,7 +483,7 @@
 /* review_corousel */
 
 .review_corousel {
-    padding: 130px 0 0 0;
+    padding: 130px 0;
 }
 
 .carousel-inner {
@@ -500,7 +500,7 @@
 /* doctor */
 
 .all_doctors {
-    padding: 130px 0 130px 0;
+    padding: 0 0 130px 0;
 }
 
 .doctorcard {
@@ -1170,4 +1170,17 @@
     background-color: transparent;
     border-radius: 12px;
     border: 1px solid #3a6cee;
+}
+
+/* contact_us */
+
+.img_contact_us {
+    background-image: linear-gradient(rgba(17, 17, 17, .3), rgba(17, 17, 17, .3)), linear-gradient(rgba(58, 108, 238, .4), rgba(58, 108, 238, .4)), url("Images/contact_us.webp");
+    background-position: 0 0, 0 0, 50%;
+    background-repeat: repeat, repeat, no-repeat;
+    background-size: auto, auto, cover;
+    justify-content: center;
+    align-items: center;
+    padding: 180px 0;
+    display: flex;
 }

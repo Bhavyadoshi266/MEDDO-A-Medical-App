@@ -11,7 +11,7 @@ export default function Navbar() {
                         <nav className="navbar navbar-expand-lg py-3    ">
                             <div className="container-fluid">
                                 <li className="nav-item">
-                                    <a className="nav-link p-0" aria-current="page" href="#">HOMEPAGE</a>
+                                    <Link className="nav-link p-0" aria-current="page" to="/homepage">HOMEPAGE</Link>
                                 </li>
                                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
