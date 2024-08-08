@@ -1185,19 +1185,24 @@
     display: flex;
 }
 
+.conatct_details_wrapper {
+    padding-bottom: 130px;
+}
+
 @media screen and (min-width: 1280px) {
     .conatct_details {
         padding-top: 130px;
         padding-bottom: 130px;
     }
 }
+
 .conatct_details {
     background-color: #3a6cee;
     color: #ffffff;
     border-radius: 10px;
     /*justify-content: space-around;*/
     width: 100%;
-    margin-top:-30px;
+    margin-top: -30px;
     padding: 30px;
     /*display:flex;*/
     position: relative;
@@ -1240,7 +1245,7 @@
     cursor: pointer;
 }
 
-.conatct_detail_text:hover{
+.conatct_detail_text:hover {
     text-decoration: none;
     color: #111111;
 }
@@ -1257,3 +1262,93 @@
     }
 }
 
+/* contact_appointment */
+
+.contact_appointment_wrapper {
+    grid-column-gap: 60px;
+    grid-row-gap: 60px;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+}
+
+.contact_appointment {
+    padding: 0 0 130px 0;
+}
+
+@media screen and (min-width: 970px) {
+    .contact_appointment {
+        /* grid-column-gap: 90px; */
+        /* grid-row-gap: 90px; */
+    }
+}
+
+.appointment_container_bottom {
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    border-top: 1px solid var(--primary-70);
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    display: flex;
+}
+
+.appointment_container_bottom {
+    font-size: 28px;
+    color: #222222;
+    font-weight: 500;
+    border-top: 1px solid #3a6cee;
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+.social_medaia {
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    font-size: 24px;
+    text-align: center;
+}
+
+@media screen and (min-width: 1440px) {
+    .appointment_container_bottom {
+        margin-top: 50px;
+        padding-top: 50px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .appointment_container_bottom {
+        margin-top: 40px;
+        padding-top: 40px;
+    }
+}
+
+.contact_appointment_form{
+    background-color: #3a6cee;
+    padding: 40px;
+    border-radius: 20px;
+    width: 55%;
+}
+
+@media screen and (min-width: 1280px) {
+    .contact_appointment_form{
+        width: 57%;
+    }
+}
+
+.contact_appointment_top{
+    width: 40%;
+}
+
+@media screen and (min-width: 970px) {
+    .contact_appointment_top {
+        text-align: center;
+        width: auto;
+        max-width: 600px;
+    }
+}
