@@ -13,23 +13,6 @@ export default function Contact_us() {
                 </div>
 
                 <div className="wrapper">
-                    {/* <div className="conatct_details .container">
-                        <div className="row d-flex justify-content-between align-items-start">
-                            <div className="col-4 conatct_detail" style={{borderRight: "1px solid rgb(255,255,255,0.2)"}}>
-                                <p className='m-0'><i class="fa-solid fa-location-dot"></i></p>
-                                <a href="https://www.google.com/maps?sca_esv=555467477&amp;output=search&amp;q=1333+2nd+Ave,+Seattle,+WA+98118&amp;source=lnms&amp;entry=mc&amp;sa=X&amp;ved=2ahUKEwjJ5ZrgrtKAAxVszgIHHQx-AjwQ0pQJegQICxAB" target="_blank" class="conatct_detail_text">4517 Washington Ave. Manchester, Kentucky 39495</a>
-                            </div>
-                            <div className="col-4 conatct_detail center_borders">
-                                <p className='m-0'><i class="fa-solid fa-envelope"></i></p>
-                                <a className='m-0 conatct_detail_text'  href="mailto:meddoc@simple.com" >meddoc@simple.com</a>
-                            </div>
-                            <div className="col-4 conatct_detail" style={{borderLeft: "1px solid rgb(255,255,255,0.2)"}}>
-                                <p className='m-0'><i class="fa-solid fa-phone"></i></p>
-                                <a className='m-0 conatct_detail_text' href="tel:(302)5550107">(302) 555 0107</a>
-                                <a className='m-0 conatct_detail_text' href="tel:(684) 555 0102">(684) 555 0102</a>
-                            </div>
-                        </div>
-                    </div> */}
 
                     <div className="conatct_details_wrapper animate-text">
                         <div className="conatct_details container">
@@ -53,14 +36,14 @@ export default function Contact_us() {
 
                     <div className="contact_appointment">
                         <div className="container">
+                            <div className="row">
+                                <div className="contact_appointment_wrapper p-0 m-0 ">
 
-                            <div className="contact_appointment_wrapper p-0 m-0 ">
-                                <div className="row flex-column flex-lg-row">
                                     <div className="contact_appointment_top p-0 m-0">
-                                        <div className="appointment_container_header">
-                                            <p className='Corosel_to_aboutus_header animate-text' style={{ color: "#222222", fontWeight: '500' }}>Appointments to Meddoc</p>
-                                            <p className='processdesc animate-text'>To schedule an appointment, please call our office during business hours or use our online scheduling system available on our website. For urgent care needs, we also accept walk-in appointments.</p>
-                                        </div>
+
+                                        <p className='Corosel_to_aboutus_header animate-text' style={{ color: "#222222", fontWeight: '500' }}>Appointments to Meddoc</p>
+                                        <p className='processdesc animate-text'>To schedule an appointment, please call our office during business hours or use our online scheduling system available on our website. For urgent care needs, we also accept walk-in appointments.</p>
+
                                         <div className="appointment_container_bottom ">
                                             <p className='m-0 animate-text'>Social media:</p>
                                             <div className="social_medaia animate-text">
@@ -70,63 +53,34 @@ export default function Contact_us() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-12 col-lg-12 contact_appointment_form d-flex justify-content-between align-items-center p-0 m-0">
-                                        <div className="col-12 col-md-6 mb-3 mb-md-0">
-                                            <input type="text" placeholder='Select service' className="form-control" />
+                                    <div className="contact_appointment_form  m-0">
+
+                                        <div class="form_wrapper animate-text ">
+                                            <select class="select_field">
+                                                <option value="">Select service</option>
+                                                <option value="First">Medical consultations</option>
+                                                <option value="Second">Telemedicine services</option>
+                                                <option value="Third">Geriatric care</option>
+                                                <option value="Another option">Dermatological treatment</option>
+                                                <option value="Another option">Health screenings</option>
+                                                <option value="Another option">Chronic disease management</option>
+                                                <option value="Another option">Another service</option>
+                                            </select>
+                                            <input class="contact_field" placeholder="Your name" type="text" />
                                         </div>
-                                        <div className="col-12 col-md-6">
-                                            <input type="text" placeholder='Select service' className="form-control" />
-                                        </div>
+
+                                        <input type="email" placeholder='Your email' className='contact_field animate-text' style={{ width: '100%' }} />
+
+                                        <textarea placeholder="Your text" maxlenght="5000" className='contact_textarea animate-text' />
+
+                                        <input className='contact_btn animate-text' data-wait='Please wait...' value='MAKE AN APPOINTMENT' type='submit'/>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-
-                    {/* <div className="contact_appointment">
-                        <div className="container">
-                            <div className="row">
-                                <div className="contact_appointment_wrapper p-0 m-0">
-                                    <div className="row flex-column flex-lg-row">
-
-                                        <div className="col-12 contact_appointment_top p-0 m-0">
-                                            <div className="appointment_container_header">
-                                                <p className='Corosel_to_aboutus_header animate-text' style={{ color: "#222222", fontWeight: '500' }}>Appointments to Meddoc</p>
-                                                <p className='processdesc animate-text'>To schedule an appointment, please call our office during business hours or use our online scheduling system available on our website. For urgent care needs, we also accept walk-in appointments.</p>
-                                            </div>
-                                            <div className="appointment_container_bottom">
-                                                <p className='m-0 animate-text'>Social media:</p>
-                                                <div className="social_media animate-text">
-                                                    <a href=""> <i className="fa-brands fa-facebook"></i></a>
-                                                    <a href=""> <i className="fa-brands fa-instagram"></i></a>
-                                                    <a href=""> <i className="fa-brands fa-youtube"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-12 col-lg-12 contact_appointment_form d-flex justify-content-between align-items-center p-0 m-0">
-                                            <div className="col-12 col-md-6 mb-3 mb-md-0">
-                                                <input type="text" placeholder='Select service' className="form-control" />
-                                            </div>
-                                            <div className="col-12 col-md-6">
-                                                <input type="text" placeholder='Select service' className="form-control" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> */}
-
                 </div>
-
-
-
-
-
-
-
-
 
                 <div className="join_team ">
                     <div className="join_team_img">
@@ -143,7 +97,6 @@ export default function Contact_us() {
                         </div>
                     </div>
                 </div>
-
 
             </section>
         </>

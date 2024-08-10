@@ -8,6 +8,86 @@
     font-family: 'Gabarito', sans-serif;
 }
 
+
+
+/* .navbar {
+    background-color: #333;
+    overflow: hidden;
+    padding: 10px 20px;
+}
+
+.navbar .dropbtn {
+    background-color: #333;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 20px;
+    width: 600px; /* Adjust the width as needed 
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown-content .col-4 {
+    width: 30%;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 8px 0;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+@media screen and (max-width: 767px) {
+    .dropdown-content {
+        width: 100%;
+    }
+
+    .dropdown-content .col-4 {
+        width: 100%;
+        text-align: left;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
 .wrapper {
     max-width: 1290px;
     width: 100%;
@@ -17,9 +97,7 @@
 
 .navbar {
     background-color: #ffffff;
-
 }
-
 
 .navbar.sticky-top {
     position: -webkit-sticky;
@@ -43,7 +121,6 @@
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 } */
-
 
 .navbar {
     background-color: #fff;
@@ -127,9 +204,8 @@
     color: #222222;
 }
 
-
-
 /* HOMEPAGE */
+
 .homepage {
     background-color: #f9f9f9;
     padding: 15px 0;
@@ -1189,54 +1265,90 @@
     padding-bottom: 130px;
 }
 
-@media screen and (min-width: 1280px) {
-    .conatct_details {
-        padding-top: 130px;
-        padding-bottom: 130px;
-    }
-}
-
 .conatct_details {
     background-color: #3a6cee;
     color: #ffffff;
     border-radius: 10px;
-    /*justify-content: space-around;*/
     width: 100%;
     margin-top: -30px;
     padding: 30px;
-    /*display:flex;*/
     position: relative;
     overflow: hidden;
     box-shadow: 0 15px 40px rgba(0, 0, 0, .07);
 }
 
 .conatct_detail {
-    grid-row-gap: 10px;
+    display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     padding: 8px 10px;
-    display: flex;
-    width: 33.33%;
+    width: 100%;
     text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+@media screen and (min-width: 768px) {
+    .conatct_detail {
+        /* flex-direction: row; */
+        text-align: center;
+        align-items: flex-start;
+        margin-bottom: 0;
+        width: 48%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .conatct_detail:nth-child(2) {
+        margin-top: 20px;
+        text-align: center;
+        align-items: center;
+
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .conatct_detail {
+        width: 30%;
+        margin-bottom: 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    .conatct_detail:nth-child(2) {
+        margin-top: 0;
+    }
 }
 
 @media screen and (min-width: 1440px) {
     .conatct_detail {
         padding-left: 20px;
         padding-right: 20px;
+        align-items: center;
+        text-align: center;
+        align-items: center;
     }
 }
 
 .conatct_detail i {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-right: 15px;
-    /* font-family: "Fa solid 900", sans-serif; */
-    font-size: 20px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-align: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    .conatct_detail i {
+        margin-right: 15px;
+        margin-bottom: 0;
+        text-align: center;
+        align-items: center;
+    }
 }
 
 .conatct_detail_text {
-    text-align: center;
     line-height: 1.5em;
     color: #ffffff;
     text-decoration: none;
@@ -1246,109 +1358,166 @@
 }
 
 .conatct_detail_text:hover {
-    text-decoration: none;
     color: #111111;
 }
 
-@media screen and (max-width: 767px) {
-    .conatct_detail {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 991px) {
-    .conatct_detail {
-        width: 30%;
-    }
-}
 
 /* contact_appointment */
 
 .contact_appointment_wrapper {
-    grid-column-gap: 60px;
-    grid-row-gap: 60px;
-    justify-content:center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     width: 100%;
-    display: flex;
+    padding: 20px;
+    column-gap: 40px;
 }
 
 .contact_appointment {
     padding: 0 0 130px 0;
+    width: 100%;
 }
 
 @media screen and (min-width: 970px) {
-    .contact_appointment {
-        /* grid-column-gap: 90px; */
-        /* grid-row-gap: 90px; */
+    .contact_appointment_wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contact_appointment_form, 
+    .contact_appointment_top {
+        width: 70%;
     }
 }
 
 .appointment_container_bottom {
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    border-top: 1px solid var(--primary-70);
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-    padding-top: 20px;
-    display: flex;
-}
-
-.appointment_container_bottom {
-    font-size: 28px;
+    font-size: 20px;
     color: #222222;
     font-weight: 500;
     border-top: 1px solid #3a6cee;
-    margin-top: 50px;
-    padding-top: 50px;
+    margin-top: 30px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .social_medaia {
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    justify-content: flex-start;
-    align-items: center;
     display: flex;
-    font-size: 24px;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    gap: 15px;
+    margin-top: 15px;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 768px) {
     .appointment_container_bottom {
-        margin-top: 50px;
-        padding-top: 50px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .social_medaia {
+        margin-top: 0;
     }
 }
 
-@media screen and (min-width: 1280px) {
-    .appointment_container_bottom {
-        margin-top: 40px;
-        padding-top: 40px;
-    }
-}
-
-.contact_appointment_form{
+.contact_appointment_form {
     background-color: #3a6cee;
-    padding: 40px;
+    padding: 30px 20px;
     border-radius: 20px;
-    width: 55%;
-}
-
-@media screen and (min-width: 1280px) {
-    .contact_appointment_form{
-        width: 57%;
-    }
-}
-
-.contact_appointment_top{
-    width: 40%;
+    width: 100%;
+    /* max-width: 600px; */
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 @media screen and (min-width: 970px) {
-    .contact_appointment_top {
-        text-align: center;
-        width: auto;
-        max-width: 600px;
+    .contact_appointment_form {
+        max-width: none;
+        width: 100%;
+        margin-top: 0;
     }
+}
+
+.form_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.select_field,
+.contact_field,
+.contact_textarea {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    .select_field,
+    .contact_field {
+        width: 48%;
+    }
+}
+
+.contact_btn {
+    border: 1px solid #ffffff;
+    border-radius: 12px;
+    background-color: #ffffff;
+    color: #222222;
+    padding: 14px 20px;
+    text-align: center;
+    transition: all .35s;
+    width: 100%;
+}
+
+.contact_btn:hover{
+    background-color: #3a6cee;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+    .contact_btn {
+        width: auto;
+        padding: 14px 44px;
+    }
+}
+
+.contact_textarea{
+    border: 1px solid #ffffff;
+    border-radius: 12px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 200px;
+    max-height: 100%;
+    margin-bottom: 30px;
+    padding: 16px 18px;
+    font-size: 16px;
+    line-height: 1em;
+}
+
+.contact_field{
+    border: 1px solid #ffffff;
+    border-radius: 12px;
+    background-color: #ffffff;
+    height: auto;
+    padding: 16px 18px;
+    font-size: 16px;
+    line-height: 1em;
+    transition: all .2s;
+    margin-bottom: 13px;
+    /* width:100%; */
+}
+
+.select_field{
+    border: 1px solid #ffffff;
+    border-radius: 12px;
+    background-color:#ffffff;
+    color: rgba(100, 100, 100, .6);
+    height: auto;
+    padding: 16px 18px;
+    font-size: 16px;
+    margin-bottom: 13px;
 }
