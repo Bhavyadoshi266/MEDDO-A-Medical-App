@@ -162,7 +162,21 @@
     transition: 0.3s;
 }
 
-.dropdown-content {
+.dropdown_allpage {
+    min-width: 650px;
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    /* min-width: 180px; */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+    left: -300px;
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+.dropdown_about {
     display: none;
     position: absolute;
     background-color: #ffffff;
@@ -170,11 +184,12 @@
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 10px;
+    font-size: 15px;
 }
 
 .dropdown-content a {
     color: #222222;
-    padding: 10px 20px;
+    padding: 10px 13px;
     text-decoration: none;
     display: block;
     transition: 0.3s;
@@ -1305,7 +1320,6 @@
         margin-top: 20px;
         text-align: center;
         align-items: center;
-
     }
 }
 
@@ -1384,7 +1398,7 @@
         justify-content: space-between;
     }
 
-    .contact_appointment_form, 
+    .contact_appointment_form,
     .contact_appointment_top {
         width: 70%;
     }
@@ -1455,6 +1469,7 @@
 }
 
 @media screen and (min-width: 768px) {
+
     .select_field,
     .contact_field {
         width: 48%;
@@ -1472,7 +1487,7 @@
     width: 100%;
 }
 
-.contact_btn:hover{
+.contact_btn:hover {
     background-color: #3a6cee;
     color: #ffffff;
     border: 1px solid #ffffff;
@@ -1485,7 +1500,7 @@
     }
 }
 
-.contact_textarea{
+.contact_textarea {
     border: 1px solid #ffffff;
     border-radius: 12px;
     min-width: 100%;
@@ -1498,7 +1513,7 @@
     line-height: 1em;
 }
 
-.contact_field{
+.contact_field {
     border: 1px solid #ffffff;
     border-radius: 12px;
     background-color: #ffffff;
@@ -1511,13 +1526,138 @@
     /* width:100%; */
 }
 
-.select_field{
+.select_field {
     border: 1px solid #ffffff;
     border-radius: 12px;
-    background-color:#ffffff;
+    background-color: #ffffff;
     color: rgba(100, 100, 100, .6);
     height: auto;
     padding: 16px 18px;
     font-size: 16px;
     margin-bottom: 13px;
+}
+
+
+/* shop */
+
+.shop_corosul {
+    border-radius: 20px;
+    background-image: linear-gradient(rgba(17, 17, 17, .3), rgba(17, 17, 17, .3)), linear-gradient(rgba(58, 108, 238, .4), rgba(58, 108, 238, .4)), url("https://cdn.prod.website-files.com/667292222ace79b57551dc5e/6685604a6ee93ec949befd3d_Banner%20Shop%20(1).webp");
+    background-position: 0 0, 0 0, 50%;
+    background-repeat: repeat, repeat, no-repeat;
+    background-size: auto, auto, cover;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.shop_corosul_constant {
+    text-align: center;
+    max-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shop_card {
+    padding: 130px 0;
+}
+
+.card {
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog_img_container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.blog_contentlink {
+    position: absolute;
+    bottom: -20%;
+    left: 0;
+    right: 0;
+    color: #ffffff;
+    padding: 10px;
+    transition: bottom 1s ease-in-out;
+}
+
+.shop_img{
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
+    transition: 0.3s;
+    border: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.shop_img:hover{
+    border: 1px solid #3a6cee;
+    cursor: pointer; 
+}
+
+.abc{
+    position: absolute;
+    /* bottom: -20%; */
+    top: 290px;
+    /* left: 0; */
+    right: 0;
+    color: #4b1b1b;
+    padding: 10px;
+    transition: bottom 1s ease-in-out;
+}
+@media (max-width: 576px) {
+    .card {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .product_content {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .product_content {
+        padding-left: 19px;
+        padding-right: 19px;
+    }
+}
+
+.product_content {
+    z-index: 9;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 30px;
+    display: flex;
+    position: relative;
+}
+
+.shop_price{
+    font-size: 26px;
+    color: #3a6cee;
+    font-weight: 600;
+}
+
+.shop_btn{
+    background-color: #3a6cee;
+    font-size:16px;
+    padding: 14px 44px;
+    border-radius: 15px;
+    color: #ffffff;
+    transition: 0.3s all;
+}
+
+.shop_btn:hover{
+    background-color: #ffffff;
+    border: 1px solid #3a6cee;
+    color: #3a6cee;
 }

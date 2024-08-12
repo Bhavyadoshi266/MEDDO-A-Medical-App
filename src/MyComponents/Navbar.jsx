@@ -21,7 +21,7 @@ export default function Navbar() {
                                                 <button>ABOUT</button>
                                                 <i className="fa-solid fa-caret-down p-0" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginLeft: '5px', cursor: 'pointer' }}></i>
                                             </a>
-                                            <div className="dropdown-content">
+                                            <div className="dropdown-content dropdown_about">
                                                 <li><a href="">ABOUT US </a></li>
                                                 <li><a href="">OUR DOCTORS</a></li>
                                                 <li><Link to="/price">PRICING</Link></li>
@@ -50,7 +50,7 @@ export default function Navbar() {
                                     <li className="nav-item">
                                         <a className="nav-link p-0" aria-current="page" href="#"><i className="fa-solid fa-cart-shopping"></i></a>
                                     </li>
-                                    <li className="nav-item">
+                                    <li className="nav-item d-flex">
                                         <div className="dropdown col-12">
                                             <a className="nav-link p-0 d-flex" href="#">
                                                 <button>ALL PAGES</button>
@@ -87,31 +87,34 @@ export default function Navbar() {
 
                                             {/* <div className="dropdown"> */}
 
-                                            <div className="dropdown-content container">
+                                            <div className="dropdown-content container dropdown_allpage">
                                                 <div className="row">
-                                                    <div className="col-4">
+                                                    <div className="col-4  m-0">
+                                                        <li><a href="">HOME</a></li>
                                                         <li><a href="">ABOUT US</a></li>
                                                         <li><a href="">OUR DOCTORS</a></li>
+                                                        <li><a href="">DOCTORS DETAILS</a></li>
                                                         <li><a href="">PRICING</a></li>
-                                                        <li><a href="">APPOINTMENTS</a></li>
-                                                        <li><a href="">TESTIMONIALS</a></li>
-                                                        <li><a href="">FAQ</a></li>
+                                                        <li><a href="">DEPARTMENTS</a></li>
+                                                        <li><a href="">WORKING HOURS</a></li>
+
                                                     </div>
-                                                    <div className="col-4">
-                                                        <li><a href="">ABOUT US</a></li>
-                                                        <li><a href="">OUR DOCTORS</a></li>
-                                                        <li><a href="">PRICING</a></li>
+                                                    <div className="col-4 p-0 m-0">
+                                                        <li><a href="">DEPARTMENTS DETAILS</a></li>
+                                                        <li><a href="">SERVICES</a></li>
+                                                        <li><a href="">SERVICES DETAILS</a></li>
                                                         <li><a href="">APPOINTMENTS</a></li>
                                                         <li><a href="">TESTIMONIALS</a></li>
-                                                        <li><a href="">FAQ</a></li>
+                                                        <li><a href="">CAREER</a></li>
+                                                        <li><a href="">CAREER DETAILS</a></li>
                                                     </div>
-                                                    <div className="col-4">
-                                                        <li><a href="">ABOUT US</a></li>
-                                                        <li><a href="">OUR DOCTORS</a></li>
-                                                        <li><a href="">PRICING</a></li>
-                                                        <li><a href="">APPOINTMENTS</a></li>
-                                                        <li><a href="">TESTIMONIALS</a></li>
+                                                    <div className="col-4 p-0 m-0">
+                                                        <li><a href="">SCHEDULES</a></li>
                                                         <li><a href="">FAQ</a></li>
+                                                        <li><a href="">NEWS</a></li>
+                                                        <li><a href="">NEWS DETAILS</a></li>
+                                                        <li><Link to="/shop">SHOP</Link></li>
+                                                        <li><a href="">PRODUCT DETAILS</a></li>
                                                     </div>
                                                 </div>
                                             </div>
