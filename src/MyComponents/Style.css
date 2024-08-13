@@ -1569,47 +1569,45 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.blog_img_container {
+.shopimg_container {
     position: relative;
     overflow: hidden;
-    border-radius: 5px;
-}
-
-.blog_contentlink {
-    position: absolute;
-    bottom: -20%;
-    left: 0;
-    right: 0;
-    color: #ffffff;
-    padding: 10px;
-    transition: bottom 1s ease-in-out;
+    transition: 0.3s;
+    border: none;
 }
 
 .shop_img{
-    height: auto;
-    max-height: 350px;
-    object-fit: cover;
-    transition: 0.3s;
+    transition: opacity 0.3s ease;
+    border-radius: 15px;
     border: none;
-    position: relative;
-    overflow: hidden;
+}
+
+.shopimg_text{
+    position: absolute;
+    bottom: 4%;
+    right: 8%;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+    background-color:#ffffff;
+    color: #3a6cee;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 10px;
+    padding: 3px 8px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.shopimg_container:hover .shopimg_text {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .shop_img:hover{
     border: 1px solid #3a6cee;
-    cursor: pointer; 
+    border-radius: 15px;
 }
 
-.abc{
-    position: absolute;
-    /* bottom: -20%; */
-    top: 290px;
-    /* left: 0; */
-    right: 0;
-    color: #4b1b1b;
-    padding: 10px;
-    transition: bottom 1s ease-in-out;
-}
 @media (max-width: 576px) {
     .card {
         width: 100%;
@@ -1641,22 +1639,22 @@
     position: relative;
 }
 
-.shop_price{
+.shop_price {
     font-size: 26px;
     color: #3a6cee;
     font-weight: 600;
 }
 
-.shop_btn{
+.shop_btn {
     background-color: #3a6cee;
-    font-size:16px;
+    font-size: 16px;
     padding: 14px 44px;
     border-radius: 15px;
     color: #ffffff;
     transition: 0.3s all;
 }
 
-.shop_btn:hover{
+.shop_btn:hover {
     background-color: #ffffff;
     border: 1px solid #3a6cee;
     color: #3a6cee;

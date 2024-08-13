@@ -15,6 +15,7 @@ export default function Shop() {
             medicines_name: 'Vitamin B12',
             medicines_decs: 'Vitamin, also known as cobalamin, is a crucial water-soluble ...',
             medicines_price: '$ 12.00 USD',
+            medicines_type:'VITAMINS',
         },
         {
             id: '2',
@@ -22,6 +23,7 @@ export default function Shop() {
             medicines_name: 'Medical mask',
             medicines_decs: 'Medical masks are a critical component of personal protective ...',
             medicines_price: '$ 3.00 USD',
+            medicines_type:'MEANS OF PROTECTTION',
         },
         {
             id: '3',
@@ -29,6 +31,7 @@ export default function Shop() {
             medicines_name: 'Vitamin D3',
             medicines_decs: 'Vitamin D3, also known as cholecalciferol, is a vital nutrient ...',
             medicines_price: '$ 13.00 USD',
+            medicines_type:'VITAMINS',
         },
         {
             id: '4',
@@ -36,6 +39,7 @@ export default function Shop() {
             medicines_name: 'Vitamin C',
             medicines_decs: 'Vitamin C, also known as ascorbic acid, is a water-soluble vitamin ...',
             medicines_price: '$ 11.00 USD',
+            medicines_type:'VITAMINS',
         },
         {
             id: '5',
@@ -43,6 +47,7 @@ export default function Shop() {
             medicines_name: 'Medical gown',
             medicines_decs: 'Medical gowns are a critical component of personal protective ...',
             medicines_price: '$ 16.00 USD',
+            medicines_type:'MEANS OF PROTECTTION',
         },
         {
             id: '6',
@@ -50,6 +55,7 @@ export default function Shop() {
             medicines_name: 'Medical gloves',
             medicines_decs: 'Medical gloves are a crucial part of personal protective ...',
             medicines_price: '$ 15.00 USD',
+            medicines_type:'MEANS OF PROTECTTION',
         },
     ]
     return (
@@ -63,28 +69,15 @@ export default function Shop() {
                         </div>
                     </div>
 
-                    {/* <div className="shop_card animate-text">
-                        {medicines.map((item) => (
-                            <div class="card" style={{width:'18rem'}}>
-                            <img src={item.medicines_img} class="card-img-top" alt="..."/>
-                            <div class="card-body">
-                              <h5 class="card-title">{item.medicines_name}</h5>
-                              <p class="card-text">{item.medicines_decs}</p>
-                              <p class="card-text">{item.medicines_price}</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                          </div>
-                        ))}
-
-                    </div> */}
-
                     <div className="shop_card animate-text row text-center">
                         {medicines.map((item) => (
                             <div className="col-sm-12 col-md-6 col-lg-4 mb-4 px-3" key={item.id}>
                                 <div className="card h-100 speciality_body">
-                                    <img src={item.medicines_img} className="shop_img img-fluid service_img" alt={item.medicines_name} />
-                                        <a href="#" className='abc py-3 px-5'>bhavya</a>
-                                   
+                                    <div className="shopimg_container">
+                                        <img src={item.medicines_img} className="shop_img img-fluid" alt={item.medicines_name} />
+                                        <a href='' className="shopimg_text">{item.medicines_type}</a>
+                                    </div>
+
                                     <div className="card-body product_content">
                                         {/* <h5 className="card-title">{item.medicines_name}</h5> */}
                                         <h5 className="card-title"> <a href="" className='speciality_title' style={{ fontSize: '28px' }}>{item.medicines_name}</a> </h5>
@@ -92,7 +85,6 @@ export default function Shop() {
                                         <p className="card-text speciality_text my-2">{item.medicines_decs}</p>
                                         <p className="card-text shop_price">{item.medicines_price}</p>
                                         <a href="#" className="btn shop_btn">ADD TO CART</a>
-
                                     </div>
                                 </div>
                             </div>
