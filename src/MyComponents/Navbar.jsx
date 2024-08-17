@@ -48,7 +48,7 @@ export default function Navbar() {
                                 </ul>
                                 <ul className='d-flex mb-2 mb-lg-0 navbar-nav'>
                                     <li className="nav-item">
-                                        <a className="nav-link p-0" aria-current="page" href="#"><i className="fa-solid fa-cart-shopping"></i></a>
+                                        <Link lassName="nav-link p-0" aria-current="page" to="/cart"><i className="fa-solid fa-cart-shopping"></i></Link>
                                     </li>
                                     <li className="nav-item d-flex">
                                         <div className="dropdown col-12">

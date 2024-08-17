@@ -58,6 +58,8 @@ export default function Shop() {
             medicines_type:'MEANS OF PROTECTTION',
         },
     ]
+
+    
     return (
         <>
             <div className="shop">

@@ -11,6 +11,7 @@ import Footer from './MyComponents/Footer';
 import Price from './MyComponents/Price';
 import Contact_us from './MyComponents/Contact_us';
 import Shop from './MyComponents/Shop';
+import Cart from './MyComponents/Cart';
 
 function App() {
   return (
@@ -25,10 +26,7 @@ function App() {
           <Route path="/homepage" element={<Homepage />}/>
           <Route path="/contact_us" element={<Contact_us />}/>
           <Route path="/shop" element={<Shop />}/>
-
-
-
-
+          <Route path="/cart" element={<Cart />}/>
         </Routes>
         <Footer/>
       </BrowserRouter>
