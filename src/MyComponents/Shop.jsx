@@ -6,7 +6,7 @@ import vitaminC from './Images/vitaminC.jpg'
 import Medicalgown from './Images/Medicalgown.jpg'
 import Medicalgloves from './Images/Medicalgloves.jpg'
 
-export default function Shop() {
+export default function Shop({addtocart}) {
 
     const medicines = [
         {
@@ -59,7 +59,6 @@ export default function Shop() {
         },
     ]
 
-    
     return (
         <>
             <div className="shop">
@@ -86,7 +85,7 @@ export default function Shop() {
 
                                         <p className="card-text speciality_text my-2">{item.medicines_decs}</p>
                                         <p className="card-text shop_price">{item.medicines_price}</p>
-                                        <a href="#" className="btn shop_btn">ADD TO CART</a>
+                                        <a href="#" className="btn shop_btn" onClick={() => addtocart(item)}>ADD TO CART</a>
                                     </div>
                                 </div>
                             </div>
