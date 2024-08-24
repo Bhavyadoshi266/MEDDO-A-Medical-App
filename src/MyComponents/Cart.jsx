@@ -50,10 +50,13 @@
 //     );
 // }
 
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import Medicalgloves from './Images/Medicalgloves.jpg';
+import { CartContext } from './CartContext';
 
-export default function Cart({ onClose,cartItems,removeItem }) {
+export default function Cart({ onClose }) {
+
+    const { cartItems, removeItem } = useContext(CartContext);
 
     return (
         <div className="cart-overlay cart">
@@ -67,36 +70,46 @@ export default function Cart({ onClose,cartItems,removeItem }) {
                     </div>
                     <div className="cartwrapper_list">
                         <form action="" className='cart_form'>
-                            {cartItems > 0 ? (
-                                cartItems.map(item => (
-                                    <div className="cart_items" key={item.id}>
-                                        <img src={item.image} alt="" className='cart_itemimg' />
-                                        <div className="cart_list_info">
-                                            <p className='m-0 p-0' style={{ color: '#222222', fontWeight: '700' }}>{item.name}</p>
-                                            <p className='m-0 p-0'>${item.price.toFixed(2)} USD</p>
-                                            <a href="#" className='m-0 p-0 cart_remove' onClick={() => removeItem(item.id)}>REMOVE</a>
-                                        </div>
-                                        <input type="number" name="quantity" autoComplete="off" pattern="^[0-9]+$" value={item.quantity} className='cart_input' />
+
+                            {cartItems.map(item => (
+                                <div className="cart_items" key={item.id}>
+                                    <img src={item.medicines_img} alt="" className='cart_itemimg' />
+                                    <div className="cart_list_info">
+                                        <p className='m-0 p-0' style={{ color: '#222222', fontWeight: '700' }}>{item.medicines_name}</p>
+                                        <p className='m-0 p-0'>{item.medicines_price}</p>
+                                        <a href="#" className='m-0 p-0 cart_remove' onClick={() => removeItem(item.id)}>REMOVE</a>
                                     </div>
-                                ))
-                            ) : ( 
-                                <p className='px-5 py-4 m-0'>Your cart is empty.</p>
-                            )}
-                            {cartItems > 0 && (
-                                <div className="cart_footer">
-                                    <div className="cart_total">
-                                        <p className='m-0 p-0'>Subtotal</p>
-                                        <p className='m-0 p-0' style={{ color: '#222222', fontWeight: '700' }}>
-                                            ${cartItems.reduce((total, item) => total + (item.price * item.quantity), 0).toFixed(2)} USD
-                                        </p>
-                                    </div>
-                                    <a href="#" className="btn shop_btn">CONTINUE TO CHECKOUT</a>
+                                    <input type="number" name="quantity" autoComplete="off" pattern="^[0-9]+$" value={item.quantity} className='cart_input' />
                                 </div>
-                            )}
+                            ))}
+
+                            <div className="cart_footer">
+                                <div className="cart_total">
+                                    <p className='m-0 p-0'>Subtotal</p>
+                                    <p className='m-0 p-0' style={{ color: '#222222', fontWeight: '700' }}>
+                                        $ {cartItems.reduce((total, item) => total + (item.medicines_price * item.quantity), 0).toFixed(2)} USD
+                                    </p>
+                                </div>
+                                <a href="#" className="btn shop_btn">CONTINUE TO CHECKOUT</a>
+                            </div>
+                            
                         </form>
                     </div>
                 </div>
             </section>
         </div>
+
+        //     <div className="cart cart-overlay">
+        //     <button onClick={onClose}>Close</button>
+        //     <h3>Your Cart</h3>
+        //     <ul>
+        //       {cartItems.map(item => (
+        //         <li key={item.id}>
+        //           {item.medicines_name} - Quantity: {item.quantity}
+        //           <button onClick={() => removeItem(item.id)}>Remove</button>
+        //         </li>
+        //       ))}
+        //     </ul>
+        //   </div>
     );
 }

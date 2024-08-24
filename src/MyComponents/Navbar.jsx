@@ -48,7 +48,7 @@ export default function Navbar({onCartClick}) {
                                 </ul>
                                 <ul className='d-flex mb-2 mb-lg-0 navbar-nav'>
                                     <li className="nav-item">
-                                        <Link lassName="nav-link p-0" aria-current="page" to="/ " onClick={onCartClick}><i className="fa-solid fa-cart-shopping"></i></Link>
+                                        <Link lassName="nav-link p-0" aria-current="page" to="/" onClick={onCartClick}><i className="fa-solid fa-cart-shopping"></i></Link>
                                     </li>
                                     <li className="nav-item d-flex">
                                         <div className="dropdown col-12">
