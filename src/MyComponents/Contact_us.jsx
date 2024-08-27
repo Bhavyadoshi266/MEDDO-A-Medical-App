@@ -37,14 +37,14 @@ export default function Contact_us() {
                     <div className="contact_appointment">
                         <div className="container">
                             <div className="row">
-                                <div className="contact_appointment_wrapper p-0 m-0 ">
+                                <div className="contact_appointment_wrapper p-0 m-0">
 
                                     <div className="contact_appointment_top p-0 m-0">
 
                                         <p className='Corosel_to_aboutus_header animate-text' style={{ color: "#222222", fontWeight: '500' }}>Appointments to Meddoc</p>
                                         <p className='processdesc animate-text'>To schedule an appointment, please call our office during business hours or use our online scheduling system available on our website. For urgent care needs, we also accept walk-in appointments.</p>
 
-                                        <div className="appointment_container_bottom ">
+                                        <div className="appointment_container_bottom">
                                             <p className='m-0 animate-text'>Social media:</p>
                                             <div className="social_medaia animate-text">
                                                 <a href=""> <i class="fa-brands fa-facebook"></i></a>

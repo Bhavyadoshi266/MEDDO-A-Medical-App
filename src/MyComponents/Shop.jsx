@@ -109,7 +109,7 @@ import Medicalgloves from './Images/Medicalgloves.jpg'
 
 // import React, { useContext } from 'react';
 // import { CartContext } from './MyComponents/CartContext.jsx';
-import { CartContext } from './CartContext';
+import { CartContext } from './CartProvider';
 
 
 export default function Shop() {

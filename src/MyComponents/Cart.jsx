@@ -52,9 +52,9 @@
 
 import React, { useContext } from 'react';
 import Medicalgloves from './Images/Medicalgloves.jpg';
-import { CartContext } from './CartContext';
+import { CartContext } from './CartProvider';
 
-export default function Cart({ onClose }) {
+export default function Cart(props) {
 
     const { cartItems, removeItem } = useContext(CartContext);
 
@@ -64,7 +64,7 @@ export default function Cart({ onClose }) {
                 <div className="cart_wrapper">
                     <div className="cart_header">
                         <h4 className='m-0 p-0' style={{ color: '#222222', fontSize: '28px', fontWeight: '500' }}>Your Cart</h4>
-                        <p className='m-0 p-0' style={{ color: '#222222', fontWeight: '500', cursor: 'pointer' }} onClick={onClose}>
+                        <p className='m-0 p-0' style={{ color: '#222222', fontWeight: '500', cursor: 'pointer' }} onClick={props.onClose}>
                             <i className="fa-solid fa-x"></i>
                         </p>
                     </div>
