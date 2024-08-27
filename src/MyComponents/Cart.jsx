@@ -56,7 +56,7 @@ import { CartContext } from './CartProvider';
 
 export default function Cart(props) {
 
-    const { cartItems, removeItem } = useContext(CartContext);
+    const { cartitem, removeItem } = useContext(CartContext);
 
     return (
         <div className="cart-overlay cart">
@@ -71,7 +71,7 @@ export default function Cart(props) {
                     <div className="cartwrapper_list">
                         <form action="" className='cart_form'>
 
-                            {cartItems.map(item => (
+                            {cartitem.map(item => (
                                 <div className="cart_items" key={item.id}>
                                     <img src={item.medicines_img} alt="" className='cart_itemimg' />
                                     <div className="cart_list_info">
@@ -87,7 +87,7 @@ export default function Cart(props) {
                                 <div className="cart_total">
                                     <p className='m-0 p-0'>Subtotal</p>
                                     <p className='m-0 p-0' style={{ color: '#222222', fontWeight: '700' }}>
-                                        $ {cartItems.reduce((total, item) => total + (item.medicines_price * item.quantity), 0).toFixed(2)} USD
+                                        $ {cartitem.reduce((total, item) => total + (item.medicines_price * item.quantity), 0).toFixed(2)} USD
                                     </p>
                                 </div>
                                 <a href="#" className="btn shop_btn">CONTINUE TO CHECKOUT</a>

@@ -48,17 +48,17 @@ export default function CartProvider({ children }) {
   const [cartitem, setcartitem] = useState([]);
 
   const addToCart = (item) => {
-    // setcartitem((prevItems) => [...prevItems, item]);
+    setcartitem([...cartitem,{...item, quantity:1}]);
     console.log(item);
   };
 
-  //   const removeitem = (itemId) => {
-  //   const updatedItems = cartitem.filter(item => item.id !== itemId);
-  //   setcartitem(updatedItems);
-  // };
+    const removeItem = (itemId) => {
+    const updatedItems = cartitem.filter(item => item.id !== itemId);
+    setcartitem(updatedItems);
+  };
 
   return (
-    <CartContext.Provider value={{ cartitem, addToCart }}>
+    <CartContext.Provider value={{ cartitem, addToCart, removeItem }}>
       {children}
     </CartContext.Provider>
   );

@@ -42,7 +42,7 @@ export default function All_doctors() {
                     <div className="container">
                         <div className="row d-flex justify-content-between align-items-center animate-text">
                             {doctors.map((item) => (
-                                <div className="card p-2 my-3 doctorcard" style={{ width: '18rem' }} >
+                                <div className="card p-2 my-3 doctorcard" style={{ width: '18rem' }} key={item.id}>
                                     <img src={item.doctorimg} className="card-img-top" alt="..." />
                                     <div className="card-body d-flex px-0">
                                         <div className="col-10 ">
