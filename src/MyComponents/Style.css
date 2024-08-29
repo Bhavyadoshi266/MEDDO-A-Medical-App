@@ -97,13 +97,13 @@
 
 .navbar {
     background-color: #ffffff;
+    z-index: 1;
 }
 
 .navbar.sticky-top {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    z-index: 1;
 }
 
 .bg-red {
@@ -1667,6 +1667,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1001;
 }
 
 .cart_wrapper{
@@ -1679,6 +1680,7 @@
     overflow: auto;
     box-shadow: 0 5px 25px rgba(0, 0, 0, .25);
     border-radius: 20px;
+    /* max-height: 450px; */
 }
 
 .cart_header{
@@ -1712,6 +1714,14 @@
     padding: 24px 24px;
     overflow: auto;
     border-bottom: 1px solid #e6e6e6;
+    /* max-height: 300px; */
+}
+
+.cartitemsection{
+    /* max-height: 30px; */
+    max-height: 100vh;
+    /* Ensures it takes up the full viewport height */
+    overflow-y: auto;
 }
 
 .cart_itemimg{
@@ -1766,10 +1776,6 @@
     margin-bottom: 16px;
     display: flex;
 }
-
-
-
-/* Cart.css */
 
 .cart-overlay {
     position: fixed;

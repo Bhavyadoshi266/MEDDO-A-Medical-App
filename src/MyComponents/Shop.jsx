@@ -99,7 +99,7 @@
 // }
 
 
-import React,{ useContext } from 'react';
+import React, { useContext,useState } from 'react';
 import vitaminB12 from './Images/vitaminB12.jpg'
 import medicalmask from './Images/medicalmask.jpg'
 import vitaminD3 from './Images/vitaminD3.jpg'
@@ -115,6 +115,7 @@ import { CartContext } from './CartProvider';
 export default function Shop() {
 
     const { addToCart } = useContext(CartContext);
+    const [itemadded, setitemadded] = useState();
 
     const medicines = [
         {
@@ -123,7 +124,7 @@ export default function Shop() {
             medicines_name: 'Vitamin B12',
             medicines_decs: 'Vitamin, also known as cobalamin, is a crucial water-soluble ...',
             medicines_price: '$ 12.00 USD',
-            medicines_type:'VITAMINS',
+            medicines_type: 'VITAMINS',
         },
         {
             id: '2',
@@ -131,7 +132,7 @@ export default function Shop() {
             medicines_name: 'Medical mask',
             medicines_decs: 'Medical masks are a critical component of personal protective ...',
             medicines_price: '$ 3.00 USD',
-            medicines_type:'MEANS OF PROTECTTION',
+            medicines_type: 'MEANS OF PROTECTTION',
         },
         {
             id: '3',
@@ -139,7 +140,7 @@ export default function Shop() {
             medicines_name: 'Vitamin D3',
             medicines_decs: 'Vitamin D3, also known as cholecalciferol, is a vital nutrient ...',
             medicines_price: '$ 13.00 USD',
-            medicines_type:'VITAMINS',
+            medicines_type: 'VITAMINS',
         },
         {
             id: '4',
@@ -147,7 +148,7 @@ export default function Shop() {
             medicines_name: 'Vitamin C',
             medicines_decs: 'Vitamin C, also known as ascorbic acid, is a water-soluble vitamin ...',
             medicines_price: '$ 11.00 USD',
-            medicines_type:'VITAMINS',
+            medicines_type: 'VITAMINS',
         },
         {
             id: '5',
@@ -155,7 +156,7 @@ export default function Shop() {
             medicines_name: 'Medical gown',
             medicines_decs: 'Medical gowns are a critical component of personal protective ...',
             medicines_price: '$ 16.00 USD',
-            medicines_type:'MEANS OF PROTECTTION',
+            medicines_type: 'MEANS OF PROTECTTION',
         },
         {
             id: '6',
@@ -163,9 +164,18 @@ export default function Shop() {
             medicines_name: 'Medical gloves',
             medicines_decs: 'Medical gloves are a crucial part of personal protective ...',
             medicines_price: '$ 15.00 USD',
-            medicines_type:'MEANS OF PROTECTTION',
+            medicines_type: 'MEANS OF PROTECTTION',
         },
     ]
+
+    const loadaddToCart = (item) => {
+        console.log(addToCart)
+        setitemadded(item.id); // Set the state to the ID of the item being added
+        addToCart(item);
+        setTimeout(() => {
+            setitemadded(null); // Reset the state after a delay
+        }, 1500); // Delay for 1 second
+    };
 
     return (
         <>
@@ -188,12 +198,15 @@ export default function Shop() {
                                     </div>
 
                                     <div className="card-body product_content">
-                                        {/* <h5 className="card-title">{item.medicines_name}</h5> */}
                                         <h5 className="card-title"> <a href="" className='speciality_title' style={{ fontSize: '28px' }}>{item.medicines_name}</a> </h5>
 
                                         <p className="card-text speciality_text my-2">{item.medicines_decs}</p>
                                         <p className="card-text shop_price">{item.medicines_price}</p>
-                                        <a href="#" className="btn shop_btn" onClick={() => addToCart(item)}>ADD TO CART</a>
+                                        <button className="btn shop_btn" onClick={() => loadaddToCart(item)}>
+                                            {/* // disabled={itemadded === item.id} // Disable button while adding  */}
+                                            {itemadded === item.id ? 'ADDING TO CART...' : 'ADD TO CART'}
+                                        </button>
+                                        {/* <button href="#" className="btn shop_btn" onClick={() => handleAddToCart(item)}>ADD TO CART</button> */}
                                     </div>
                                 </div>
                             </div>

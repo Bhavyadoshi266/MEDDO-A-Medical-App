@@ -70,19 +70,19 @@ export default function Cart(props) {
                     </div>
                     <div className="cartwrapper_list">
                         <form action="" className='cart_form'>
-
-                            {cartitem.map(item => (
-                                <div className="cart_items" key={item.id}>
-                                    <img src={item.medicines_img} alt="" className='cart_itemimg' />
-                                    <div className="cart_list_info">
-                                        <p className='m-0 p-0' style={{ color: '#222222', fontWeight: '700' }}>{item.medicines_name}</p>
-                                        <p className='m-0 p-0'>{item.medicines_price}</p>
-                                        <a href="#" className='m-0 p-0 cart_remove' onClick={() => removeItem(item.id)}>REMOVE</a>
+                            <div className="cartitemsection">
+                                {cartitem.map(item => (
+                                    <div className="cart_items" key={item.id}>
+                                        <img src={item.medicines_img} alt="" className='cart_itemimg' />
+                                        <div className="cart_list_info">
+                                            <p className='m-0 p-0' style={{ color: '#222222', fontWeight: '700' }}>{item.medicines_name}</p>
+                                            <p className='m-0 p-0'>{item.medicines_price}</p>
+                                            <a href="#" className='m-0 p-0 cart_remove' onClick={() => removeItem(item.id)}>REMOVE</a>
+                                        </div>
+                                        <input type="number" name="quantity" autoComplete="off" pattern="^[0-9]+$" value={item.quantity} className='cart_input' />
                                     </div>
-                                    <input type="number" name="quantity" autoComplete="off" pattern="^[0-9]+$" value={item.quantity} className='cart_input' />
-                                </div>
-                            ))}
-
+                                ))}
+                            </div>
                             <div className="cart_footer">
                                 <div className="cart_total">
                                     <p className='m-0 p-0'>Subtotal</p>
@@ -92,7 +92,7 @@ export default function Cart(props) {
                                 </div>
                                 <a href="#" className="btn shop_btn">CONTINUE TO CHECKOUT</a>
                             </div>
-                            
+
                         </form>
                     </div>
                 </div>
