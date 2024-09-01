@@ -56,6 +56,10 @@ import { CartContext } from './CartProvider';
 
 export default function Cart(props) {
 
+    const calculateSubtotal = () => {
+        return cartitem.reduce((total, item) => total + (item.medicines_price * item.quantity), 0).toFixed(2);
+    };
+
     const { cartitem, removeItem } = useContext(CartContext);
 
     return (
@@ -76,7 +80,7 @@ export default function Cart(props) {
                                         <img src={item.medicines_img} alt="" className='cart_itemimg' />
                                         <div className="cart_list_info">
                                             <p className='m-0 p-0' style={{ color: '#222222', fontWeight: '700' }}>{item.medicines_name}</p>
-                                            <p className='m-0 p-0'>{item.medicines_price}</p>
+                                            <p className='m-0 p-0'>${(item.medicines_price).toFixed(2)} USD</p>
                                             <a href="#" className='m-0 p-0 cart_remove' onClick={() => removeItem(item.id)}>REMOVE</a>
                                         </div>
                                         <input type="number" name="quantity" autoComplete="off" pattern="^[0-9]+$" value={item.quantity} className='cart_input' />
@@ -87,7 +91,8 @@ export default function Cart(props) {
                                 <div className="cart_total">
                                     <p className='m-0 p-0'>Subtotal</p>
                                     <p className='m-0 p-0' style={{ color: '#222222', fontWeight: '700' }}>
-                                        $ {cartitem.reduce((total, item) => total + (item.medicines_price * item.quantity), 0).toFixed(2)} USD
+                                       ${calculateSubtotal()} USD
+                                        {/* $ {cartitem.reduce((total, item) => total + (item.medicines_price * item.quantity), 0).toFixed(2)} USD */}
                                     </p>
                                 </div>
                                 <a href="#" className="btn shop_btn">CONTINUE TO CHECKOUT</a>
