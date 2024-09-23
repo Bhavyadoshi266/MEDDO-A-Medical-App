@@ -79,6 +79,7 @@ export default function Shop() {
     return (
         <>
             <div className="shop">
+
                 <div className="wrapper">
                     <div className="shop_corosul">
                         <div className="shop_corosul_constant  animate-text">
